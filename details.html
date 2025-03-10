@@ -24,6 +24,9 @@
     </div>
 
     <script>
+        let allData = [];
+
+        // Load data and item details
         async function loadItemDetails() {
             const params = new URLSearchParams(window.location.search);
             const itemId = params.get("id");
@@ -33,8 +36,8 @@
             }
             
             const response = await fetch('data.json');
-            const data = await response.json();
-            const item = data.find(i => i.id.toString() === itemId);
+            allData = await response.json();
+            const item = allData.find(i => i.id.toString() === itemId);
             
             if (!item) {
                 document.body.innerHTML = "<h1>Item not found</h1>";
@@ -44,25 +47,30 @@
             document.getElementById("item-name").textContent = item.name;
             document.getElementById("item-description").textContent = item.description;
             
+            // Display the item details
             const detailsTable = document.getElementById("item-details");
             detailsTable.innerHTML = `
                 <tr><th>Year Announced</th><td>${item.yearAnnounced}</td></tr>
                 <tr><th>Year Abandoned</th><td>${item.yearAbandoned ?? 'N/A'}</td></tr>
                 <tr><th>Total Made</th><td>${item.totalMade}</td></tr>
-                <tr><th>Type</th><td>${item.type}</td></tr>
-                <tr><th>Made By</th><td>${item.madeBy}</td></tr>
-                <tr><th>Used By</th><td>${item.usedBy}</td></tr>
+                <tr><th>Type</th><td><a href="index.html?type=${item.type}">${item.type}</a></td></tr>
+                <tr><th>Made By</th><td><a href="index.html?madeBy=${item.madeBy}">${item.madeBy}</a></td></tr>
+                <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
+                <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 
+                    `<a href="index.html?usedBy=${used.trim()}">${used.trim()}</a>`).join(', ')}</td></tr>
             `;
             
+            // Display the properties
             const propertiesTable = document.getElementById("item-properties");
             propertiesTable.innerHTML = item.properties.map(prop => 
                 `<tr><th>${prop.name}</th><td>${prop.value}</td></tr>`
             ).join('');
             
+            // Display the pictures
             const picturesDiv = document.getElementById("item-pictures");
             picturesDiv.innerHTML = item.pictures.map(pic => `<img src="${pic}" alt="Image">`).join('');
         }
-        
+
         loadItemDetails().catch(error => console.error('Error loading details:', error));
     </script>
 </body>

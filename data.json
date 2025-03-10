@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "name": "Bavar-373 System",
-        "description": "aaaa",
-        "yearAnnounced": 2019,
+        "name": "Bavar-373",
+        "description": "Bavar-373 is an Iranian long-range road-mobile surface-to-air missile system unveiled in August 2016.  Iran describes it as a competitor of the S-300 missile system.",
+        "yearAnnounced": 2016,
         "yearAbandoned": null,
-        "totalMade": 100,
+        "totalMade": null,
         "type": "SAM",
-        "madeBy": "IEI Industries",
+        "madeBy": "Iranian Defence Ministry",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC,IRI Army",
+        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
         "properties": [
             {
                 "name":"Range",
-                "value": "500km"
+                "value": "300km"
             },
             {
                 "name":"Total number of missles",
@@ -22,6 +22,43 @@
         ],
         "pictures": [
             "./pictures/bavar373_1.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Karrar MBT",
+        "description": "The Karrar is an Iranian main battle tank. The tank was announced in 2016. At the announcement, it was stated that it possessed an electro-optical fire control system, a laser rangefinder, ballistic computer and could fire at both stationary and mobile targets in day or night.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "totalMade": 800,
+        "type": "MBT",
+        "madeBy": "Bani Hashim Defense Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC,IRGC Ground Forces,IRI Army,IRI Army Ground Forces",
+        "properties": [
+            {
+                "name":"Mass",
+                "value": "50 Tons"
+            },
+            {
+                "name":"Crew",
+                "value": "3"
+            },
+            {
+                "name":"Maximum Speed",
+                "value": "70km/h"
+            },
+            {
+                "name":"Main Armament",
+                "value": "125 mm 2A46M"
+            },
+            {
+                "name":"Operational Range",
+                "value": "~550km"
+            }
+        ],
+        "pictures": [
+            "./pictures/karrarmbt_1.jpg"
         ]
     }
 ]

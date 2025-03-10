@@ -85,6 +85,56 @@ h1 {
         width: 100%;
     }
 }
+
+/* Filter Row */
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-group select {
+    padding: 8px;
+    font-size: 14px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#maintitle {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 /* Table Styles */
 table {
     width: 100%;
@@ -101,17 +151,4 @@ th, td {
 th {
     background-color: #007bff;
     color: white;
-}
-#search {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-#maintitle {
-    font-size: 3em;
-    text-align: center;
-    font-weight: bolder;
 }
