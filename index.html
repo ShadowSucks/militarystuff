@@ -49,19 +49,21 @@
             const filterUsedBy = params.get("usedBy");
 
             if (filterType) {
-                filteredData = filteredData.filter(item => item.type === filterType);
+                filteredData = filteredData.filter(item => item.type.split('//')[0] === filterType);
                 document.getElementById("current-category").textContent = `Showing ${filterType} Items`;
             }
             if (filterMadeBy) {
-                filteredData = filteredData.filter(item => item.madeBy === filterMadeBy);
+                filteredData = filteredData.filter(item => {
+                    return item.madeBy.split('//')[0].trim() === filterMadeBy
+                    });
                 document.getElementById("current-category").textContent = `Showing ${filterMadeBy} Items`;
             }
             if (filterCountry) {
-                filteredData = filteredData.filter(item => item.countryOfOrigin === filterCountry);
+                filteredData = filteredData.filter(item => item.countryOfOrigin.split('//')[0] === filterCountry);
                 document.getElementById("current-category").textContent = `Showing ${filterCountry} Items`;
             }
             if (filterUsedBy) {
-                filteredData = filteredData.filter(item => item.usedBy.split(',').some(used => used.trim() === filterUsedBy));
+                filteredData = filteredData.filter(item => item.usedBy.split(',').some(used => used.split('//')[0].trim() === filterUsedBy));
                 document.getElementById("current-category").textContent = `Showing ${filterUsedBy} Items`;
             }
 
@@ -77,8 +79,8 @@
                 row.innerHTML = `
                     <td>${item.name}</td>
                     <td>${item.yearAnnounced}</td>
-                    <td><a href="#" onclick="filterByCategory('${item.type}')">${item.type}</a></td>
-                    <td><a href="#" onclick="filterByMadeBy('${item.madeBy}')">${item.madeBy}</a></td>
+                    <td><a href="#" onclick="filterByCategory('${item.type.split('//')[0]}')">${item.type.split('//')[0]}</a></td>
+                    <td><a href="#" onclick="filterByMadeBy('${item.madeBy.split('//')[0]}')">${item.madeBy.split('//')[0]}</a></td>
                     <td><a href="details.html?id=${item.id}">View Details</a></td>
                 `;
                 tableBody.appendChild(row);
@@ -99,7 +101,7 @@
 
         function filterByMadeBy(madeBy) {
             const params = new URLSearchParams(window.location.search);
-            params.set("madeBy", madeBy);
+            params.set("madeBy", madeBy.trim());
             window.location.search = params.toString(); // Update URL with new filter
         }
 
@@ -115,8 +117,11 @@
             const attributes = ["type", "countryOfOrigin", "madeBy", "usedBy"];
             attributes.forEach(attr => {
                 // Get unique values for each attribute
-                const uniqueValues = [...new Set(allData.flatMap(item => 
-                    (attr === "usedBy" ? item[attr].split(",") : [item[attr]])))];
+                const uniqueValues = [...new Set(allData.flatMap(item => {
+                    let str = item[attr].split("//");
+                    return (attr === "usedBy" ? str[0].split(",") : [str[0]]);
+                }
+                    ))];
 
                 const filterDiv = document.createElement("div");
                 filterDiv.classList.add("filter-group");

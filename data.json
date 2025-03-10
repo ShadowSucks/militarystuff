@@ -5,6 +5,7 @@
         "description": "Bavar-373 is an Iranian long-range road-mobile surface-to-air missile system unveiled in August 2016.  Iran describes it as a competitor of the S-300 missile system.",
         "yearAnnounced": 2016,
         "yearAbandoned": null,
+        "inService": 2019,
         "totalMade": null,
         "type": "SAM",
         "madeBy": "Iranian Defence Ministry",
@@ -30,11 +31,12 @@
         "description": "The Karrar is an Iranian main battle tank. The tank was announced in 2016. At the announcement, it was stated that it possessed an electro-optical fire control system, a laser rangefinder, ballistic computer and could fire at both stationary and mobile targets in day or night.",
         "yearAnnounced": 2016,
         "yearAbandoned": null,
+        "inService": 2020,
         "totalMade": 800,
         "type": "MBT",
         "madeBy": "Bani Hashim Defense Industrial Complex",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC,IRGC Ground Forces,IRI Army,IRI Army Ground Forces",
+        "usedBy": "IRI Army Ground Forces",
         "properties": [
             {
                 "name":"Mass",
@@ -46,7 +48,7 @@
             },
             {
                 "name":"Maximum Speed",
-                "value": "70km/h"
+                "value": "70 km/h"
             },
             {
                 "name":"Main Armament",
@@ -54,11 +56,89 @@
             },
             {
                 "name":"Operational Range",
-                "value": "~550km"
+                "value": "~550 km"
             }
         ],
         "pictures": [
             "./pictures/karrarmbt_1.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Shahed 136",
+        "description": "The Shahed 136, is an Iranian-designed loitering munition, also referred to as a kamikaze drone or suicide drone, in the form of an autonomous pusher-propelled drone. It is designed and manufactured by the Iranian state-owned corporation HESA in association with Shahed Aviation Industries.",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": 2021,
+        "totalMade": "5000+",
+        "type": "Drone",
+        "madeBy": "Shahed Aviation Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Army Air Force,IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name":"Mass",
+                "value": "200 kg"
+            },
+            {
+                "name":"Warhead Weight",
+                "value": "50 kg"
+            },
+            {
+                "name":"Maximum Speed",
+                "value": "185 km/h"
+            },
+            {
+                "name":"Unit cost",
+                "value": "Export: $100,000, Domestic: ~ $10,000"
+            },
+            {
+                "name":"Operational Range",
+                "value": "2,500 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/shahed136_1.jpg",
+            "./pictures/shahed136_2.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Suleiman-402",
+        "description": "Heavily upgraded version of American M60. Details are not accurate.",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": 2024,
+        "totalMade": "50+",
+        "type": "MBT",
+        "madeBy": "Unknown // Could be Iranian Defence Ministry",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Army Ground Forces",
+        "properties": [
+            {
+                "name":"Mass",
+                "value": "46 Tons"
+            },
+            {
+                "name":"Crew",
+                "value": "4"
+            },
+            {
+                "name":"Maximum Speed",
+                "value": "60 km/h"
+            },
+            {
+                "name":"Main Armament",
+                "value": "130 mm"
+            },
+            {
+                "name":"Operational Range",
+                "value": "~ 550 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/suleiman402_1.jpg",
+            "./pictures/suleiman402_2.jpg"
         ]
     }
 ]

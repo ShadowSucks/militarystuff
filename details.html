@@ -50,11 +50,12 @@
             // Display the item details
             const detailsTable = document.getElementById("item-details");
             detailsTable.innerHTML = `
-                <tr><th>Year Announced</th><td>${item.yearAnnounced}</td></tr>
+                <tr><th>Year Announced</th><td>${item.yearAnnounced ?? 'N/A'}</td></tr>
                 <tr><th>Year Abandoned</th><td>${item.yearAbandoned ?? 'N/A'}</td></tr>
-                <tr><th>Total Made</th><td>${item.totalMade}</td></tr>
+                <tr><th>In Service</th><td>${item.inService ?? 'N/A'}</td></tr>
+                <tr><th>Total Made</th><td>${item.totalMade ?? 'N/A'}</td></tr>
                 <tr><th>Type</th><td><a href="index.html?type=${item.type}">${item.type}</a></td></tr>
-                <tr><th>Made By</th><td><a href="index.html?madeBy=${item.madeBy}">${item.madeBy}</a></td></tr>
+                <tr><th>Made By</th><td><a href="index.html?madeBy=${item.madeBy.split('//')[0].trim()}">${item.madeBy.split('//')[0].trim()}</a> ${item.madeBy.split('//')[1].trim()}</td></tr>
                 <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
                 <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 
                     `<a href="index.html?usedBy=${used.trim()}">${used.trim()}</a>`).join(', ')}</td></tr>
@@ -69,9 +70,12 @@
             // Display the pictures
             const picturesDiv = document.getElementById("item-pictures");
             picturesDiv.innerHTML = item.pictures.map(pic => `<img src="${pic}" alt="Image">`).join('');
+
+            document.title = `${item.name} Details`;
         }
 
         loadItemDetails().catch(error => console.error('Error loading details:', error));
+        
     </script>
 </body>
 </html>
