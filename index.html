@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilitaryStuff</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <p id="maintitle">MilitaryStuff</p>
+    <input type="text" id="search" placeholder="Search by name..." oninput="searchItems()">
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Year Announced</th>
+                <th>Type</th>
+                <th>Made By</th>
+                <th>More Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        let allData = [];
+        
+        async function loadData() {
+            const response = await fetch('data.json'); // Ensure 'data.json' is accessible
+            allData = await response.json();
+            displayItems(allData);
+        }
+        
+        function displayItems(data) {
+            const tableBody = document.querySelector("#data-table tbody");
+            tableBody.innerHTML = "";
+            data.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.yearAnnounced}</td>
+                    <td>${item.type}</td>
+                    <td>${item.madeBy}</td>
+                    <td><a href="details.html?id=${item.id}">View Details</a></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        function searchItems() {
+            const query = document.getElementById("search").value.toLowerCase();
+            const filteredData = allData.filter(item => item.name.toLowerCase().includes(query));
+            displayItems(filteredData);
+        }
+        
+        loadData().catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+</html>

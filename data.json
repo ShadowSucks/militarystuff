@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Bavar-373 System",
+        "description": "aaaa",
+        "yearAnnounced": 2019,
+        "yearAbandoned": null,
+        "totalMade": 100,
+        "type": "SAM",
+        "madeBy": "IEI Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC,IRI Army",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "500km"
+            },
+            {
+                "name":"Total number of missles",
+                "value": "4"
+            }
+        ],
+        "pictures": [
+            "./pictures/bavar373_1.jpg"
+        ]
+    }
+]
