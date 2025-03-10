@@ -196,5 +196,54 @@
             "./pictures/ghadir_1.jpg",
             "./pictures/ghadir_2.jpg"
         ]
+    },{
+        "id": 7,
+        "name": "Fath 14",
+        "description": "Long Range 3D Phased Array Radar, capable of locking onto stealth fighters.",
+        "yearAnnounced": 2015,
+        "yearAbandoned": null,
+        "inService": 2016,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries // (alleged),Aerospace Industries Organization // (alleged)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "Unknown,IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "600 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/fath14_1.jpg",
+            "./pictures/fath14_2.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Bashir",
+        "description": "3D Phased Array Radar, capable of locking onto stealth aircraft up to 30km above the ground.",
+        "yearAnnounced": 2018,
+        "yearAbandoned": null,
+        "inService": 2018,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Unknown,Iran Electronics Industries // (alleged),Aerospace Industries Organization // (alleged)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "300 km"
+            },
+            {
+                "name":"Maximum Height",
+                "value": "30 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/bashir_1.jpg",
+            "./pictures/bashir_2.jpg"
+        ]
     }
 ]
