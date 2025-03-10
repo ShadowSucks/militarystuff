@@ -58,7 +58,7 @@
                 <tr><th>Made By</th><td id="madeBy"></td></tr>
                 <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
                 <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 
-                    `<a href="index.html?usedBy=${used.trim()}">${used.trim()}</a>`).join(', ')}</td></tr>
+                    `<a href="index.html?usedBy=${used.split('//')[0].trim()}">${used.split('//')[0].trim()}</a>${used.split('//')[1] ? used.split('//')[1] : ''}`).join(', ')}</td></tr>
             `;
             let madeByList = '';
                 item.madeBy.split(',').forEach(e => {

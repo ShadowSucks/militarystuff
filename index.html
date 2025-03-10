@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MilitaryStuff</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <p id="maintitle">MilitaryStuff</p>
 
     <!-- Display Selected Category -->
     <p id="current-category">Showing All Items</p>
 
-    <input type="text" id="search" placeholder="Search by name..." oninput="searchItems()">
+    <input
+      type="text"
+      id="search"
+      placeholder="Search by name..."
+      oninput="searchItems()"
+    />
 
     <!-- Dynamic Filters Section -->
     <div id="filters" class="filter-row"></div>
@@ -20,154 +25,195 @@
     <button id="reset-filters" onclick="resetFilters()">Reset Filters</button>
 
     <table id="data-table">
-        <thead>
-            <tr>
-                <th>Picture</th>
-                <th>Name</th>
-                <th>Year Announced</th>
-                <th>Type</th>
-                <th>Made By</th>
-                <th>More Details</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Name</th>
+          <th>Year Announced</th>
+          <th>Type</th>
+          <th>Made By</th>
+          <th>More Details</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
     </table>
 
     <script>
-        let allData = [];
-        let filteredData = [];
+      let allData = [];
+      let filteredData = [];
 
-        async function loadData() {
-            const response = await fetch('data.json'); // Ensure 'data.json' is accessible
-            allData = await response.json();
-            filteredData = allData;
+      async function loadData() {
+        const response = await fetch("data.json"); // Ensure 'data.json' is accessible
+        allData = await response.json();
+        filteredData = allData;
 
-            // Apply filters from GET parameters
-            const params = new URLSearchParams(window.location.search);
-            const filterType = params.get("type");
-            const filterMadeBy = params.get("madeBy");
-            const filterCountry = params.get("countryOfOrigin");
-            const filterUsedBy = params.get("usedBy");
+        // Apply filters from GET parameters
+        const params = new URLSearchParams(window.location.search);
+        const filterType = params.get("type");
+        const filterMadeBy = params.get("madeBy");
+        const filterCountry = params.get("countryOfOrigin");
+        const filterUsedBy = params.get("usedBy");
 
-            if (filterType) {
-                filteredData = filteredData.filter(item => item.type.split('//')[0] === filterType);
-                document.getElementById("current-category").textContent = `Showing ${filterType} Items`;
-            }
-            if (filterMadeBy) {
-                filteredData = filteredData.filter(item => {
-                    return item.madeBy.split(',').some(made => made.split('//')[0].trim() === filterMadeBy)
-                    });
-                document.getElementById("current-category").textContent = `Showing ${filterMadeBy} Items`;
-            }
-            if (filterCountry) {
-                filteredData = filteredData.filter(item => item.countryOfOrigin.split('//')[0] === filterCountry);
-                document.getElementById("current-category").textContent = `Showing ${filterCountry} Items`;
-            }
-            if (filterUsedBy) {
-                filteredData = filteredData.filter(item => item.usedBy.split(',').some(used => used.split('//')[0].trim() === filterUsedBy));
-                document.getElementById("current-category").textContent = `Showing ${filterUsedBy} Items`;
-            }
-
-            displayItems(filteredData);
-            generateFilters(); // Regenerate the filter UI based on data
+        if (filterType) {
+          filteredData = filteredData.filter(
+            (item) => item.type.split("//")[0] === filterType
+          );
+          document.getElementById(
+            "current-category"
+          ).textContent = `Showing ${filterType} Items`;
+        }
+        if (filterMadeBy) {
+          filteredData = filteredData.filter((item) => {
+            return item.madeBy
+              .split(",")
+              .some((made) => made.split("//")[0].trim() === filterMadeBy);
+          });
+          document.getElementById(
+            "current-category"
+          ).textContent = `Showing ${filterMadeBy} Items`;
+        }
+        if (filterCountry) {
+          filteredData = filteredData.filter(
+            (item) => item.countryOfOrigin.split("//")[0] === filterCountry
+          );
+          document.getElementById(
+            "current-category"
+          ).textContent = `Showing ${filterCountry} Items`;
+        }
+        if (filterUsedBy) {
+          filteredData = filteredData.filter((item) =>
+            item.usedBy
+              .split(",")
+              .some((used) => used.split("//")[0].trim() === filterUsedBy)
+          );
+          document.getElementById(
+            "current-category"
+          ).textContent = `Showing ${filterUsedBy} Items`;
         }
 
-        function displayItems(data) {
-            const tableBody = document.querySelector("#data-table tbody");
-            tableBody.innerHTML = "";
-            data.forEach(item => {
-                const row = document.createElement("tr");
-                let madeByList = '';
-                item.madeBy.split(',').forEach(e => {
-                    madeByList += `<a href="#" onclick="filterByMadeBy('${e.split('//')[0]}')">${e.split('//')[0]}</a>, `;
-                });
-                madeByList = madeByList.slice(0, -2);
-                row.innerHTML = `
-                    <td> <img src="${item.pictures[0] ?? ''}" class="mpicture"></td>
+        displayItems(filteredData);
+        generateFilters(); // Regenerate the filter UI based on data
+      }
+
+      function displayItems(data) {
+        const tableBody = document.querySelector("#data-table tbody");
+        tableBody.innerHTML = "";
+        data.forEach((item) => {
+          const row = document.createElement("tr");
+          let madeByList = "";
+          item.madeBy.split(",").forEach((e) => {
+            madeByList += `<a href="#" onclick="filterByMadeBy('${
+              e.split("//")[0]
+            }')">${e.split("//")[0]}</a>${e.split('//')[1] ? e.split('//')[1] : ''}, `;
+          });
+          madeByList = madeByList.slice(0, -2);
+          row.innerHTML = `
+                    <td> <img src="${
+                      item.pictures[0] ?? ""
+                    }" class="mpicture"></td>
                     <td>${item.name}</td>
                     <td>${item.yearAnnounced}</td>
-                    <td><a href="#" onclick="filterByCategory('${item.type.split('//')[0]}')">${item.type.split('//')[0]}</a></td>
+                    <td><a href="#" onclick="filterByCategory('${
+                      item.type.split("//")[0]
+                    }')">${item.type.split("//")[0]}</a></td>
                     <td>${madeByList}</td>
-                    <td><a href="details.html?id=${item.id}">View Details</a></td>
+                    <td><a href="details.html?id=${
+                      item.id
+                    }">View Details</a></td>
                 `;
-                tableBody.appendChild(row);
-            });
-        }
+          tableBody.appendChild(row);
+        });
+      }
 
-        function searchItems() {
-            const query = document.getElementById("search").value.toLowerCase();
-            const result = filteredData.filter(item => item.name.toLowerCase().includes(query));
-            displayItems(result);
-        }
+      function searchItems() {
+        const query = document.getElementById("search").value.toLowerCase();
+        const result = filteredData.filter((item) =>
+          item.name.toLowerCase().includes(query)
+        );
+        displayItems(result);
+      }
 
-        function filterByCategory(category) {
-            const params = new URLSearchParams(window.location.search);
-            params.set("type", category);
-            window.location.search = params.toString(); // Update URL with new filter
-        }
+      function filterByCategory(category) {
+        const params = new URLSearchParams(window.location.search);
+        params.set("type", category);
+        window.location.search = params.toString(); // Update URL with new filter
+      }
 
-        function filterByMadeBy(madeBy) {
-            const params = new URLSearchParams(window.location.search);
-            params.set("madeBy", madeBy.trim());
-            window.location.search = params.toString(); // Update URL with new filter
-        }
+      function filterByMadeBy(madeBy) {
+        const params = new URLSearchParams(window.location.search);
+        params.set("madeBy", madeBy.trim());
+        window.location.search = params.toString(); // Update URL with new filter
+      }
 
-        function resetFilters() {
-            window.location.href = "index.html"; // Reload the page without any filters
-        }
+      function resetFilters() {
+        window.location.href = "index.html"; // Reload the page without any filters
+      }
+      function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+      // Generate filter options dynamically based on available attributes in data.json
+      function generateFilters() {
+        const filtersDiv = document.getElementById("filters");
+        filtersDiv.innerHTML = ""; // Clear existing filters
 
-        // Generate filter options dynamically based on available attributes in data.json
-        function generateFilters() {
-            const filtersDiv = document.getElementById("filters");
-            filtersDiv.innerHTML = "";  // Clear existing filters
-
-            const attributes = ["type", "countryOfOrigin", "madeBy", "usedBy"];
-            attributes.forEach(attr => {
-                // Get unique values for each attribute
-                const uniqueValues = [...new Set(allData.flatMap(item => {
-                    return (attr === "usedBy" || attr === "madeBy" ? item[attr].split(",").map(item => item.split('//')[0]) : [item[attr].split('//')[0]]);
-                }
-                    ))];
-
-                const filterDiv = document.createElement("div");
-                filterDiv.classList.add("filter-group");
-                filterDiv.innerHTML = `  
-                    <label for="${attr}">${capitalize(attr.replace(/([A-Z])/g, ' $1'))}:</label>
+        const attributes = ["type", "countryOfOrigin", "madeBy", "usedBy"];
+        attributes.forEach((attr) => {
+          // Get unique values for each attribute
+          const uniqueValues = [
+            ...new Set(
+              allData.flatMap((item) => {
+                return attr === "usedBy" || attr === "madeBy"
+                  ? item[attr].split(",").map((item) => item.split("//")[0].trim())
+                  : [item[attr].split("//")[0].trim()];
+              })
+            ),
+          ];
+          const filterDiv = document.createElement("div");
+          filterDiv.classList.add("filter-group");
+          filterDiv.innerHTML = `  
+                    <label for="${attr}">${capitalize(
+            attr.replace(/([A-Z])/g, " $1")
+          )}:</label>
                     <select id="${attr}" onchange="applyFilter('${attr}')">
                         <option value="">All</option>
-                        ${uniqueValues.map(value => `<option value="${value.trim()}">${value.trim()}</option>`).join('')}
+                        ${uniqueValues
+                          .map(
+                            (value) =>
+                              `<option value="${value.trim()}">${value.trim()}</option>`
+                          )
+                          .join("")}
                     </select>
                 `;
-                filtersDiv.appendChild(filterDiv);
+          filtersDiv.appendChild(filterDiv);
 
-                // Check if any GET parameter already applies a filter to this attribute
-                const params = new URLSearchParams(window.location.search);
-                const selectedValue = params.get(attr);
-                if (selectedValue) {
-                    document.getElementById(attr).value = selectedValue;
-                }
-            });
+          // Check if any GET parameter already applies a filter to this attribute
+          const params = new URLSearchParams(window.location.search);
+          const selectedValue = params.get(attr);
+          if (selectedValue) {
+            document.getElementById(attr).value = selectedValue;
+          }
+        });
+      }
+
+      function applyFilter(attribute) {
+        const selectedValue = document.getElementById(attribute).value;
+        const params = new URLSearchParams(window.location.search);
+
+        if (selectedValue === "") {
+          params.delete(attribute);
+        } else {
+          params.set(attribute, selectedValue);
         }
 
-        function applyFilter(attribute) {
-            const selectedValue = document.getElementById(attribute).value;
-            const params = new URLSearchParams(window.location.search);
+        window.location.search = params.toString(); // Update the URL with the new filter
+      }
 
-            if (selectedValue === "") {
-                params.delete(attribute);
-            } else {
-                params.set(attribute, selectedValue);
-            }
+      // Capitalize the first letter of each word in the string
+      function capitalize(str) {
+        return str.replace(/\b\w/g, (char) => char.toUpperCase());
+      }
 
-            window.location.search = params.toString(); // Update the URL with the new filter
-        }
-
-        // Capitalize the first letter of each word in the string
-        function capitalize(str) {
-            return str.replace(/\b\w/g, char => char.toUpperCase());
-        }
-
-        loadData().catch(error => console.error('Error loading data:', error));
+      loadData().catch((error) => console.error("Error loading data:", error));
     </script>
-</body>
+  </body>
 </html>

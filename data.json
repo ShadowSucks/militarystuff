@@ -205,9 +205,9 @@
         "inService": 2016,
         "totalMade": "Unknown",
         "type": "Radar",
-        "madeBy": "Iran Electronics Industries // (alleged),Aerospace Industries Organization // (alleged)",
+        "madeBy": "Unknown,Iran Electronics Industries // (alleged),Aerospace Industries Organization // (alleged)",
         "countryOfOrigin": "Iran",
-        "usedBy": "Unknown,IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
         "properties": [
             {
                 "name":"Range",
@@ -244,6 +244,28 @@
         "pictures": [
             "./pictures/bashir_1.jpg",
             "./pictures/bashir_2.jpg"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Mersad",
+        "description": "Mersad is an Iranian low- to mid-range air defense system developed in 2010. It fires Shahin (Falcon) missiles which are reverse-engineered, domestically upgraded versions of the American MIM-23 Hawk surface-to-air missiles. It uses a series of domestically produced radars and electronic devices.",
+        "yearAnnounced": 2010,
+        "yearAbandoned": null,
+        "inService": 2010,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Unknown,Aerospace Industries Organization // (alleged)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces,Syrian Air Force // (alleged)",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "50 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/mersad_1.jpg"
         ]
     }
 ]
