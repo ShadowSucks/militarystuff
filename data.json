@@ -14,7 +14,7 @@
         "properties": [
             {
                 "name":"Range",
-                "value": "300km"
+                "value": "300 km"
             },
             {
                 "name":"Total number of missles",
@@ -139,6 +139,36 @@
         "pictures": [
             "./pictures/suleiman402_1.jpg",
             "./pictures/suleiman402_2.jpg"
+        ]
+    },{
+        "id": 5,
+        "name": "Arman",
+        "description": "The Arman missile system (full name: Arman long-range anti-ballistic missile system) is an anti-ballistic defense system built by the Iranian Ministry of Defense and the support of the armed forces of the Islamic Republic of Iran.",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": 2024,
+        "totalMade": null,
+        "type": "SAM",
+        "madeBy": "Iranian Defence Ministry,Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "160 km"
+            },
+            {
+                "name":"Maximum Speed",
+                "value": "Mach 5"
+            },
+            {
+                "name":"Mass",
+                "value": "1000 kg"
+            }
+        ],
+        "pictures": [
+            "./pictures/arman_1.jpg",
+            "./pictures/arman_2.jpg"
         ]
     }
 ]

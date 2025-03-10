@@ -55,12 +55,17 @@
                 <tr><th>In Service</th><td>${item.inService ?? 'N/A'}</td></tr>
                 <tr><th>Total Made</th><td>${item.totalMade ?? 'N/A'}</td></tr>
                 <tr><th>Type</th><td><a href="index.html?type=${item.type}">${item.type}</a></td></tr>
-                <tr><th>Made By</th><td><a href="index.html?madeBy=${item.madeBy.split('//')[0].trim()}">${item.madeBy.split('//')[0].trim()}</a> ${item.madeBy.split('//')[1].trim()}</td></tr>
+                <tr><th>Made By</th><td id="madeBy"></td></tr>
                 <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
                 <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 
                     `<a href="index.html?usedBy=${used.trim()}">${used.trim()}</a>`).join(', ')}</td></tr>
             `;
-            
+            let madeByList = '';
+                item.madeBy.split(',').forEach(e => {
+                    madeByList += `<a href="index.html?madeBy=${e.split('//')[0]}">${e.split('//')[0]}</a>${e.split('//')[1] ? e.split('//')[1] : ''}, `;
+                });
+            madeByList = madeByList.slice(0, -2);
+            document.getElementById('madeBy').innerHTML = madeByList;
             // Display the properties
             const propertiesTable = document.getElementById("item-properties");
             propertiesTable.innerHTML = item.properties.map(prop => 
@@ -74,7 +79,7 @@
             document.title = `${item.name} Details`;
         }
 
-        loadItemDetails().catch(error => console.error('Error loading details:', error));
+        loadItemDetails().catch(error => console.log('Error loading details:', error));
         
     </script>
 </body>
