@@ -170,5 +170,31 @@
             "./pictures/arman_1.jpg",
             "./pictures/arman_2.jpg"
         ]
+    },{
+        "id": 6,
+        "name": "Ghadir Phased Array Radar",
+        "description": "Phased Array Radar Qadir (or Ghadir) is an Iranian radar with a range of 1100 km and capable of tracking targets to a height of 300 km. The radar was unveiled by the Islamic Revolutionary Guard Corp. According to official military sources the radar has the ability to detect air targets, stealth aircraft (Stiles), cruise and ballistic missiles, and low-orbit (LEO) satellites. The radar was tested for the first time during The Great Messenger 6 exercise.",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2014,
+        "totalMade": "At least 7",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries // (alleged),Aerospace Industries Organization // (alleged)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "properties": [
+            {
+                "name":"Range",
+                "value": "1100 km"
+            },
+            {
+                "name":"Maximum Height",
+                "value": "300 km"
+            }
+        ],
+        "pictures": [
+            "./pictures/ghadir_1.jpg",
+            "./pictures/ghadir_2.jpg"
+        ]
     }
 ]
