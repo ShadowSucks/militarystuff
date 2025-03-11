@@ -109,7 +109,7 @@
           madeByList = madeByList.slice(0, -2);
           row.innerHTML = `
                     <td> <img src="${
-                      item.pictures[0] ?? ""
+                      item.pictures[0].url ?? ""
                     }" class="mpicture"></td>
                     <td>${item.name}</td>
                     <td>${item.yearAnnounced}</td>

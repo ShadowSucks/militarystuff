@@ -158,3 +158,12 @@ th {
     border-radius: 5px;
     text-align: center;
 }
+.spicture {
+    display: flex;
+    flex-direction: column;
+}
+.spicture p {
+    margin: 0;
+    font-size: 1.5vh;
+    color: #585858;
+}

@@ -68,13 +68,16 @@
             document.getElementById('madeBy').innerHTML = madeByList;
             // Display the properties
             const propertiesTable = document.getElementById("item-properties");
-            propertiesTable.innerHTML = item.properties.map(prop => 
-                `<tr><th>${prop.name}</th><td>${prop.value}</td></tr>`
+            propertiesTable.innerHTML = item.properties.map(prop => {
+
+                return `<tr><th>${prop.name}</th><td>${prop.value.split(';')[1] ? `<a href="details.html?id=${prop.value.split(';')[1]}">${prop.value.split(';')[0]}</a>` : prop.value.split(';')[0]}</td></tr>`;
+            }
+                
             ).join('');
             
             // Display the pictures
             const picturesDiv = document.getElementById("item-pictures");
-            picturesDiv.innerHTML = item.pictures.map(pic => `<img src="${pic}" alt="Image">`).join('');
+            picturesDiv.innerHTML = item.pictures.map(pic => `<div class="spicture"><img src="${pic.url}" alt="Image"><p>${pic.title ?? ''}</p></div>`).join('');
 
             document.title = `${item.name} Details`;
         }
