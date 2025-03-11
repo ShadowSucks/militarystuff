@@ -455,5 +455,55 @@
                 "title": null
             }
         ]
+    },
+    {
+        "id": 14,
+        "name": "Zulfiqar 1",
+        "description": "The Zulfiqar-1 is based on the M48 Patton model acquired under the pre-revolution era. The Zulfiqar-1 was first revealed in public in 1994. A total of six prototypes were completed and field tested in 1997. The Zulfiqar-1 is protected by a welded steel hull and the turret is reinforced by a composite armour. The Zulfiqar-1 is armed with a 125mm Smoothbore gun taken from a T-72. At least 150 were produced.",
+        "yearAnnounced": 1994,
+        "yearAbandoned": null,
+        "inService": 1997,
+        "totalMade": "400+",
+        "type": "MBT",
+        "madeBy": "Shahid Kolah Dooz Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Army Ground Forces",
+        "properties": [
+            {
+                "name": "Main Armament",
+                "value": "125mm Smoothbore gun"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/zulfiqar1_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Zulfiqar 3",
+        "description": "The Zulfiqar-3, the most advanced variant of the Zulfiqar family, bears a close resemblance to the American M1 Abrams. It features considerable upgrades to the fire-control system, chassis, engine and main gun. The new variant is equipped with the 2A46 125 mm smoothbore cannon with an autoloader, a laser rangefinder and a new fire-control system. It is also fitted with a reinforced turret and the wheels are covered by an armoured skirt.",
+        "yearAnnounced": 2011,
+        "yearAbandoned": null,
+        "inService": 2012,
+        "totalMade": "750+",
+        "type": "MBT",
+        "madeBy": "Shahid Kolah Dooz Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Army Ground Forces",
+        "properties": [
+            {
+                "name": "Main Armament",
+                "value": "125mm 2A46 Smoothbore gun"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/zulfiqar3_1.jpg",
+                "title": null
+            }
+        ]
     }
 ]
