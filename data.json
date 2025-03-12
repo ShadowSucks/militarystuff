@@ -10,7 +10,7 @@
         "type": "SAM System",
         "madeBy": "Aerospace Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Air Defense Forces",
+        "usedBy": "IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -43,7 +43,7 @@
         "type": "MBT",
         "madeBy": "Bani Hashim Defense Industrial Complex",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Ground Forces",
+        "usedBy": "IRI Ground Forces",
         "properties": [
             {
                 "name": "Mass",
@@ -84,7 +84,7 @@
         "type": "Drone",
         "madeBy": "Shahed Aviation Industries",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Air Force,IRGC Aerospace Forces",
+        "usedBy": "IRI Air Force,IRGC Aerospace Forces",
         "properties": [
             {
                 "name": "Mass",
@@ -129,7 +129,7 @@
         "type": "MBT",
         "madeBy": "Unknown // (Could be Iranian Defence Ministry)",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Ground Forces",
+        "usedBy": "IRI Ground Forces",
         "properties": [
             {
                 "name": "Mass",
@@ -174,7 +174,7 @@
         "type": "SAM System",
         "madeBy": "Aerospace Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -211,7 +211,7 @@
         "type": "Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -244,7 +244,7 @@
         "type": "Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -306,7 +306,7 @@
         "type": "SAM System",
         "madeBy": "Iran Aviation Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces,Syrian Air Defense Forces // (alleged)",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Syrian Air Defense Forces // (alleged)",
         "properties": [
             {
                 "name": "Range",
@@ -331,7 +331,7 @@
         "type": "SAM System",
         "madeBy": "Iran Aviation Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces,Syrian Air Defense Forces // (alleged)",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Syrian Air Defense Forces // (alleged)",
         "properties": [
             {
                 "name": "Range",
@@ -368,7 +368,7 @@
         "type": "SAM System",
         "madeBy": "Iran Aviation Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -401,7 +401,7 @@
         "type": "SAM",
         "madeBy": "Iran Aviation Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Range",
@@ -438,7 +438,7 @@
         "type": "Radar",
         "madeBy": "Aerospace Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRGC Aerospace Forces,IRI Army Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Max Detection Range",
@@ -467,7 +467,7 @@
         "type": "MBT",
         "madeBy": "Shahid Kolah Dooz Industrial Complex",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Ground Forces",
+        "usedBy": "IRI Ground Forces",
         "properties": [
             {
                 "name": "Main Armament",
@@ -492,7 +492,7 @@
         "type": "MBT",
         "madeBy": "Shahid Kolah Dooz Industrial Complex",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Army Ground Forces",
+        "usedBy": "IRI Ground Forces",
         "properties": [
             {
                 "name": "Main Armament",
@@ -503,6 +503,113 @@
             {
                 "url": "./pictures/zulfiqar3_1.jpg",
                 "title": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Asr",
+        "description": "Asr radar is an Iranian passive electronically scanned array long-range radar unveiled in 2013.[1][2][3] The Air Surveillance Radar or ASR is a 3-D solid state phased array radar, capable of detecting boats, low flying aircraft with a radar cross section (RCS) of 4 m2 (43 sq ft) at a range of 5–110 nmi (6–127 mi; 9–204 km)",
+        "yearAnnounced": 2013,
+        "yearAbandoned": null,
+        "inService": 2013,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Navy, IRGC Navy // (Possibly)",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/asr_1.jpg",
+                "title": "Asr radar mounted on a ship"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Matla-ul-Fajr 1",
+        "description": "Matla-ul-fajr is an Iranian VHF 3D radar. It was first seen in military parades. It was stated that Matla-ul-fajr covered the whole Persian Gulf. The range of Matla-ul-Fajr-1 is 300 km and the max altitude is 20,000 m. When fully set up, the height of the system reaches eight meters and it uses 12 Yagi antennas installed in two rows. The whole system, containing the antennas, setup instruments, processing, controlling and displaying units, communication devices and power generator are all installed on a trailer to achieve a very good mobility. The radar is also equipped with ECCM to survive in an e-warfare environment.",
+        "yearAnnounced": 2011,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "Possibly 4kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr1_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr1_2.jpg",
+                "title": "Packed on a truck"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Matla-ul-Fajr 2",
+        "description": "The Matla-ul-fajr-2 radar is a VHF 3D radar, with good mobility and long range. It is suitable for air surveillance and early warning. It can operate either independently or as part of a defensive system, or as part of an integrated air defense network. This radar can be used in all weather conditions and is a modern, coherent processing radar and has all the semiconductor components that can detect and track aerial targets up to 480 kilometers as well as low-level targets. The Matla-ul-fajr-2 radar, like all previous generations, all components of the system are portable by a trailer, and the radar feed can be carried out by two diesel generators installed on it or by city electricity. In the coherent processing method used in the Matla-ul-fajr-2 radar, all transmitted signals having same phase and their random effects are prevented, while in the non-coherent there is a phase difference between signals. From the results of such a method, the ability to detect the smallest speed difference of the targets is due to the difference of the recursive signals that had no difference (actually phase difference) when sending. There is also less interference and better signal advantages in this method than the non-coherent method.",
+        "yearAnnounced": 2012,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,VHF Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "480 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "4kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr1_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr1_2.jpg",
+                "title": "Packed on a truck"
             }
         ]
     }

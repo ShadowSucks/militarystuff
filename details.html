@@ -54,7 +54,7 @@
                 <tr><th>Year Abandoned</th><td>${item.yearAbandoned ?? 'N/A'}</td></tr>
                 <tr><th>In Service</th><td>${item.inService ?? 'N/A'}</td></tr>
                 <tr><th>Total Made</th><td>${item.totalMade ?? 'N/A'}</td></tr>
-                <tr><th>Type</th><td><a href="index.html?type=${item.type}">${item.type}</a></td></tr>
+                <tr><th>Type</th><td>${item.type.split(',').map(type => `<a href="index.html?usedBy=${type}">${type}</a>`).join(', ')}</td></tr>
                 <tr><th>Made By</th><td id="madeBy"></td></tr>
                 <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
                 <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 

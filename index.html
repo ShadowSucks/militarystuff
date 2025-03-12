@@ -56,7 +56,9 @@
 
         if (filterType) {
           filteredData = filteredData.filter(
-            (item) => item.type.split("//")[0] === filterType
+            (item) => {
+              return item.type.split(",").some((type) => type === filterType)
+            }
           );
           document.getElementById(
             "current-category"
@@ -112,10 +114,8 @@
                       item.pictures[0].url ?? ""
                     }" class="mpicture"></td>
                     <td>${item.name}</td>
-                    <td>${item.yearAnnounced}</td>
-                    <td><a href="#" onclick="filterByCategory('${
-                      item.type.split("//")[0]
-                    }')">${item.type.split("//")[0]}</a></td>
+                    <td>${item.yearAnnounced ?? 'N/A'}</td>
+                    <td>${item.type.split(',').map(type => `<a href="#" onclick="filterByCategory('${type}')">${type}</a>`).join(', ')}</td>
                     <td>${madeByList}</td>
                     <td><a href="details.html?id=${
                       item.id
@@ -162,7 +162,7 @@
           const uniqueValues = [
             ...new Set(
               allData.flatMap((item) => {
-                return attr === "usedBy" || attr === "madeBy"
+                return attr === "usedBy" || attr === "madeBy" || attr === "type"
                   ? item[attr].split(",").map((item) => item.split("//")[0].trim())
                   : [item[attr].split("//")[0].trim()];
               })
