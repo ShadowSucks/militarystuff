@@ -10,7 +10,7 @@
         "type": "SAM System",
         "madeBy": "Aerospace Industries Organization",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Air Defense Forces",
+        "usedBy": "IRGC Aerospace Forces",
         "properties": [
             {
                 "name": "Range",
@@ -23,12 +23,20 @@
             {
                 "name": "Fire Control Radar",
                 "value": "Najm-802;13"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Sayyad-4B;25"
             }
         ],
         "pictures": [
             {
                 "url": "./pictures/bavar373_1.jpg",
                 "title": null
+            },
+            {
+                "url": "./pictures/bavar373_2.jpg",
+                "title": "Upgraded version of Bavar-373"
             }
         ]
     },
@@ -805,6 +813,76 @@
             {
                 "url": "./pictures/kastae2e_2.jpg",
                 "title": null
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Sayyad-4/B",
+        "description": "Sayyad 4B is a 300-kilometer-range missile that is compatible with Iran's indigenous Bavar-373 air defense system. Sayyad 4B is the latest in the Sayyad series of solid-fuel missiles.",
+        "yearAnnounced": 2019,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "300 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "32 km"
+            },
+            {
+                "name": "Mass",
+                "value": "2,000 kg"
+            },
+            {
+                "name": "Guidance System",
+                "value": "Semi-Active Radar Homing (SARH)"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "Mach 8"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/sayyad4_1.jpg",
+                "title": "Sayyad-4B"
+            },
+            {
+                "url": "./pictures/sayyad4_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Sayyad-2",
+        "description": "Sayyad 4B is a 300-kilometer-range missile that is compatible with Iran's indigenous Bavar-373 air defense system. Sayyad 4B is the latest in the Sayyad series of solid-fuel missiles.",
+        "yearAnnounced": 2013,
+        "yearAbandoned": null,
+        "inService": 2015,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Hezbollah",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "60 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/sayyad2_1.jpg",
+                "title": "Sayyad-4B"
             }
         ]
     }
