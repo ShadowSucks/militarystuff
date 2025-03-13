@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item Details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1 id="item-name">Loading...</h1>
@@ -34,19 +36,24 @@
                 document.body.innerHTML = "<h1>Item not found</h1>";
                 return;
             }
-            
+
             const response = await fetch('data.json');
             allData = await response.json();
             const item = allData.find(i => i.id.toString() === itemId);
-            
+
             if (!item) {
                 document.body.innerHTML = "<h1>Item not found</h1>";
                 return;
             }
-            
+
             document.getElementById("item-name").textContent = item.name;
-            document.getElementById("item-description").textContent = item.description;
-            
+            let result = item.description.replace(/(\w+);(\d+)/g, (match, word, number) => {
+                // Replace the match with a new string (you can customize this)
+                return `<a href="details.html?id=${number}">${word}</a>`;
+            });
+
+            document.getElementById("item-description").innerHTML = result;
+
             // Display the item details
             const detailsTable = document.getElementById("item-details");
             detailsTable.innerHTML = `
@@ -57,13 +64,13 @@
                 <tr><th>Type</th><td>${item.type.split(',').map(type => `<a href="index.html?usedBy=${type}">${type}</a>`).join(', ')}</td></tr>
                 <tr><th>Made By</th><td id="madeBy"></td></tr>
                 <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
-                <tr><th>Used By</th><td>${item.usedBy.split(',').map(used => 
-                    `<a href="index.html?usedBy=${used.split('//')[0].trim()}">${used.split('//')[0].trim()}</a>${used.split('//')[1] ? used.split('//')[1] : ''}`).join(', ')}</td></tr>
+                <tr><th>Used By</th><td>${item.usedBy.split(',').map(used =>
+                `<a href="index.html?usedBy=${used.split('//')[0].trim()}">${used.split('//')[0].trim()}</a>${used.split('//')[1] ? used.split('//')[1] : ''}`).join(', ')}</td></tr>
             `;
             let madeByList = '';
-                item.madeBy.split(',').forEach(e => {
-                    madeByList += `<a href="index.html?madeBy=${e.split('//')[0]}">${e.split('//')[0]}</a>${e.split('//')[1] ? e.split('//')[1] : ''}, `;
-                });
+            item.madeBy.split(',').forEach(e => {
+                madeByList += `<a href="index.html?madeBy=${e.split('//')[0]}">${e.split('//')[0]}</a>${e.split('//')[1] ? e.split('//')[1] : ''}, `;
+            });
             madeByList = madeByList.slice(0, -2);
             document.getElementById('madeBy').innerHTML = madeByList;
             // Display the properties
@@ -72,9 +79,9 @@
 
                 return `<tr><th>${prop.name}</th><td>${prop.value.split(';')[1] ? `<a href="details.html?id=${prop.value.split(';')[1]}">${prop.value.split(';')[0]}</a>` : prop.value.split(';')[0]}</td></tr>`;
             }
-                
+
             ).join('');
-            
+
             // Display the pictures
             const picturesDiv = document.getElementById("item-pictures");
             picturesDiv.innerHTML = item.pictures.map(pic => `<div class="spicture"><img src="${pic.url}" alt="Image"><p>${pic.title ?? ''}</p></div>`).join('');
@@ -83,7 +90,8 @@
         }
 
         loadItemDetails().catch(error => console.log('Error loading details:', error));
-        
+
     </script>
 </body>
+
 </html>

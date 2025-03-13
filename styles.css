@@ -163,6 +163,9 @@ th {
     display: flex;
     flex-direction: column;
 }
+.spicture img {
+    max-height: 55vh;
+}
 .spicture p {
     margin: 0;
     font-size: 1.5vh;

@@ -686,5 +686,126 @@
                 "title": null
             }
         ]
+    },
+    {
+        "id": 21,
+        "name": "Mehran",
+        "description": "Described as competitor of the Russian S-400, not much is known about the Mehran system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200-320 km"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Mehran-1;22"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Mehran-2;23"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehran_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Mehran-1",
+        "description": "Mehran-1 is one of the main SAMs fired by the Mehran;21 system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehransam1_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Mehran-2",
+        "description": "Mehran-2 is one of the main SAMs fired by the Mehran;21 system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "320 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehransam2_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Kasta-2E2",
+        "description": "The Kasta 2E is a modern Russian radar system. The development of the Kasta 2E surveillance radars was initiated in the former Soviet Union. Its primary objective is to overcome deficiencies or to satisfy the demand in low-level surveillance.",
+        "yearAnnounced": null,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Vega Radio Engineering Corporation",
+        "countryOfOrigin": "Russia",
+        "usedBy": "Russian Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "60 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "6 km"
+            }
+            ,
+            {
+                "name": "Power",
+                "value": "23 kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/kastae2e_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/kastae2e_2.jpg",
+                "title": null
+            }
+        ]
     }
 ]
