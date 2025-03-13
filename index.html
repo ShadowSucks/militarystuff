@@ -57,7 +57,7 @@
         if (filterType) {
           filteredData = filteredData.filter(
             (item) => {
-              return item.type.split(",").some((type) => type === filterType)
+              return item.type.split(",").some((type) => type.trim() === filterType)
             }
           );
           document.getElementById(

@@ -514,7 +514,7 @@
         "yearAbandoned": null,
         "inService": 2013,
         "totalMade": "Unknown",
-        "type": "Radar",
+        "type": "Radar, 3D Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRI Navy, IRGC Navy // (Possibly)",
@@ -522,6 +522,10 @@
             {
                 "name": "Maximum Range",
                 "value": "200 km"
+            },
+            {
+                "name": "RCS Detection",
+                "value": "4m²"
             }
         ],
         "pictures": [
@@ -539,7 +543,7 @@
         "yearAbandoned": null,
         "inService": null,
         "totalMade": "Unknown",
-        "type": "Radar",
+        "type": "Radar, VHF Radar, 3D Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -580,7 +584,7 @@
         "yearAbandoned": null,
         "inService": null,
         "totalMade": "Unknown",
-        "type": "Radar,VHF Radar",
+        "type": "Radar,VHF Radar, 3D Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -604,12 +608,82 @@
         ],
         "pictures": [
             {
-                "url": "./pictures/matlaulfajr1_1.jpg",
+                "url": "./pictures/matlaulfajr2_1.jpg",
                 "title": null
             },
             {
-                "url": "./pictures/matlaulfajr1_2.jpg",
-                "title": "Packed on a truck"
+                "url": "./pictures/matlaulfajr2_2.jpg",
+                "title": "3D Model"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Matla-ul-Fajr 3",
+        "description": "In 2016, a long wave radar of Matla-ul-fajr family was unveiled. The Matlaul-fajr radar has air surveillance capabilities to discover and detect targets in two dimension and a range of 500 kilometers. The Matla-ul-fajr-3 radar antenna differs from its previous generation in the number of channels and the number of 8 antennas per row. This radar has 10 antennas instead of 8 antennas, i.e. 40 antennas in overall. These antennas are arranged in 8 channels instead of 2channels. The identify Friend/Foe system is also installed between the two line of antenna, similar to the Matla-ul-fajr-3 radar. The latest generation of the Matlaul-fajr radar systems employ more than 10 different techniques in the field ofelectronic warfare. The Matla-ul-fajr-3 can track 100 targets simultaneously.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,VHF Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "500 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "6kW (allegedly)"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr3_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr3_2.jpg",
+                "title": "3D Model"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Kavosh",
+        "description": "In fact, Kavosh radar is similar to the Russian radar Kasta-2E2, which has been observed over the past few years in the country's air defense equipment which is one of the most important components capable of detecting stealth targets in today's advanced Russian air defense systems, including the S-300.",
+        "yearAnnounced": null,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,UHF Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "150 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "6 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/kavosh_1.jpg",
+                "title": null
             }
         ]
     }
