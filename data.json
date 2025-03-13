@@ -864,7 +864,7 @@
     {
         "id": 26,
         "name": "Sayyad-2",
-        "description": "Sayyad 4B is a 300-kilometer-range missile that is compatible with Iran's indigenous Bavar-373 air defense system. Sayyad 4B is the latest in the Sayyad series of solid-fuel missiles.",
+        "description": "",
         "yearAnnounced": 2013,
         "yearAbandoned": null,
         "inService": 2015,
@@ -882,7 +882,44 @@
         "pictures": [
             {
                 "url": "./pictures/sayyad2_1.jpg",
-                "title": "Sayyad-4B"
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Meraj-4",
+        "description": "Meraj-4 Radar is a three-dimensional phased array radar whose performance would be compatible with detecting stealth aircraft, drones, cruise missiles, and ballistic missiles.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "Unknown",
+        "type": "Radar,S Band Radar, 3D Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "450 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "200"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/meraj4_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/meraj4_2.webp",
+                "title": "Packed on a truck"
+            },
+            {
+                "url": "./pictures/meraj4_3.jpg",
+                "title": "3D Model"
             }
         ]
     }
