@@ -1,97 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Item Details</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta name="description" content="" />
+    <meta property="og:image" content="" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1 id="item-name">Loading...</h1>
-        <div class="content-layout">
-            <div class="sidebar">
-                <div class="image-container" id="item-pictures"></div>
-                <table class="info-table" id="item-details"></table>
-            </div>
-            <div class="main-content">
-                <p id="item-description"></p>
-                <h2>Properties</h2>
-                <table class="info-table" id="item-properties"></table>
-            </div>
+      <h1 id="item-name">Loading...</h1>
+      <div class="content-layout">
+        <div class="sidebar">
+          <div class="image-container" id="item-pictures"></div>
+          <table class="info-table" id="item-details"></table>
         </div>
-        <a href="index.html">Back to List</a>
+        <div class="main-content">
+          <p id="item-description"></p>
+          <h2>Properties</h2>
+          <table class="info-table" id="item-properties"></table>
+        </div>
+      </div>
+      <a href="index.html">Back to List</a>
     </div>
 
     <script>
-        let allData = [];
+      let allData = [];
 
-        // Load data and item details
-        async function loadItemDetails() {
-            const params = new URLSearchParams(window.location.search);
-            const itemId = params.get("id");
-            if (!itemId) {
-                document.body.innerHTML = "<h1>Item not found</h1>";
-                return;
-            }
-
-            const response = await fetch('data.json');
-            allData = await response.json();
-            const item = allData.find(i => i.id.toString() === itemId);
-
-            if (!item) {
-                document.body.innerHTML = "<h1>Item not found</h1>";
-                return;
-            }
-
-            document.getElementById("item-name").textContent = item.name;
-            let result = item.description.replace(/(\w+);(\d+)/g, (match, word, number) => {
-                // Replace the match with a new string (you can customize this)
-                return `<a href="details.html?id=${number}">${word}</a>`;
-            });
-
-            document.getElementById("item-description").innerHTML = result;
-
-            // Display the item details
-            const detailsTable = document.getElementById("item-details");
-            detailsTable.innerHTML = `
-                <tr><th>Year Announced</th><td>${item.yearAnnounced ?? 'N/A'}</td></tr>
-                <tr><th>Year Abandoned</th><td>${item.yearAbandoned ?? 'N/A'}</td></tr>
-                <tr><th>In Service</th><td>${item.inService ?? 'N/A'}</td></tr>
-                <tr><th>Total Made</th><td>${item.totalMade ?? 'N/A'}</td></tr>
-                <tr><th>Type</th><td>${item.type.split(',').map(type => `<a href="index.html?usedBy=${type}">${type}</a>`).join(', ')}</td></tr>
-                <tr><th>Made By</th><td id="madeBy"></td></tr>
-                <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${item.countryOfOrigin}</a></td></tr>
-                <tr><th>Used By</th><td>${item.usedBy.split(',').map(used =>
-                `<a href="index.html?usedBy=${used.split('//')[0].trim()}">${used.split('//')[0].trim()}</a>${used.split('//')[1] ? used.split('//')[1] : ''}`).join(', ')}</td></tr>
-            `;
-            let madeByList = '';
-            item.madeBy.split(',').forEach(e => {
-                madeByList += `<a href="index.html?madeBy=${e.split('//')[0]}">${e.split('//')[0]}</a>${e.split('//')[1] ? e.split('//')[1] : ''}, `;
-            });
-            madeByList = madeByList.slice(0, -2);
-            document.getElementById('madeBy').innerHTML = madeByList;
-            // Display the properties
-            const propertiesTable = document.getElementById("item-properties");
-            propertiesTable.innerHTML = item.properties.map(prop => {
-
-                return `<tr><th>${prop.name}</th><td>${prop.value.split(';')[1] ? `<a href="details.html?id=${prop.value.split(';')[1]}">${prop.value.split(';')[0]}</a>` : prop.value.split(';')[0]}</td></tr>`;
-            }
-
-            ).join('');
-
-            // Display the pictures
-            const picturesDiv = document.getElementById("item-pictures");
-            picturesDiv.innerHTML = item.pictures.map(pic => `<div class="spicture"><img src="${pic.url}" alt="Image"><p>${pic.title ?? ''}</p></div>`).join('');
-
-            document.title = `${item.name} Details`;
+      // Load data and item details
+      async function loadItemDetails() {
+        const params = new URLSearchParams(window.location.search);
+        const itemId = params.get("id");
+        if (!itemId) {
+          document.body.innerHTML = "<h1>Item not found</h1>";
+          return;
         }
 
-        loadItemDetails().catch(error => console.log('Error loading details:', error));
+        const response = await fetch("data.json");
+        allData = await response.json();
+        const item = allData.find((i) => i.id.toString() === itemId);
 
+        if (!item) {
+          document.body.innerHTML = "<h1>Item not found</h1>";
+          return;
+        }
+
+        document.getElementById("item-name").textContent = item.name;
+        let result = item.description.replace(
+          /(\w+);(\d+)/g,
+          (match, word, number) => {
+            // Replace the match with a new string (you can customize this)
+            return `<a href="details.html?id=${number}">${word}</a>`;
+          }
+        );
+
+        document.getElementById("item-description").innerHTML = result;
+
+        // Display the item details
+        const detailsTable = document.getElementById("item-details");
+        detailsTable.innerHTML = `
+                <tr><th>Year Announced</th><td>${
+                  item.yearAnnounced ?? "N/A"
+                }</td></tr>
+                <tr><th>Year Abandoned</th><td>${
+                  item.yearAbandoned ?? "N/A"
+                }</td></tr>
+                <tr><th>In Service</th><td>${item.inService ?? "N/A"}</td></tr>
+                <tr><th>Total Made</th><td>${item.totalMade ?? "N/A"}</td></tr>
+                <tr><th>Type</th><td>${item.type
+                  .split(",")
+                  .map(
+                    (type) => `<a href="index.html?usedBy=${type}">${type}</a>`
+                  )
+                  .join(", ")}</td></tr>
+                <tr><th>Made By</th><td id="madeBy"></td></tr>
+                <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${
+                  item.countryOfOrigin
+                }">${item.countryOfOrigin}</a></td></tr>
+                <tr><th>Used By</th><td>${item.usedBy
+                  .split(",")
+                  .map(
+                    (used) =>
+                      `<a href="index.html?usedBy=${used
+                        .split("//")[0]
+                        .trim()}">${used.split("//")[0].trim()}</a>${
+                        used.split("//")[1] ? used.split("//")[1] : ""
+                      }`
+                  )
+                  .join(", ")}</td></tr>
+            `;
+        let madeByList = "";
+        item.madeBy.split(",").forEach((e) => {
+          madeByList += `<a href="index.html?madeBy=${e.split("//")[0]}">${
+            e.split("//")[0]
+          }</a>${e.split("//")[1] ? e.split("//")[1] : ""}, `;
+        });
+        madeByList = madeByList.slice(0, -2);
+        document.getElementById("madeBy").innerHTML = madeByList;
+        // Display the properties
+        const propertiesTable = document.getElementById("item-properties");
+        propertiesTable.innerHTML = item.properties
+          .map((prop) => {
+            return `<tr><th>${prop.name}</th><td>${
+              prop.value.split(";")[1]
+                ? `<a href="details.html?id=${prop.value.split(";")[1]}">${
+                    prop.value.split(";")[0]
+                  }</a>`
+                : prop.value.split(";")[0]
+            }</td></tr>`;
+          })
+          .join("");
+
+        // Display the pictures
+        const picturesDiv = document.getElementById("item-pictures");
+        picturesDiv.innerHTML = item.pictures
+          .map(
+            (pic) =>
+              `<div class="spicture"><img src="${pic.url}" alt="Image"><p>${
+                pic.title ?? ""
+              }</p></div>`
+          )
+          .join("");
+
+        document.title = `${item.name} Details`;
+        document
+          .querySelector('meta[name="description"]')
+          .setAttribute("content", item.description);
+          document
+          .querySelector('meta[property="og:image"]')
+          .setAttribute("content", `${location.origin}${item.pictures[0].url.substr(1)}`);
+      }
+
+      loadItemDetails().catch((error) =>
+        console.log("Error loading details:", error)
+      );
     </script>
-</body>
-
+  </body>
 </html>
