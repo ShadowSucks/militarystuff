@@ -6,7 +6,9 @@
     <title>Item Details</title>
     <meta name="description" content="" />
     <meta property="og:image" content="" />
-    
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -130,8 +132,20 @@
           .querySelector('meta[name="description"]')
           .setAttribute("content", item.description);
           document
+          .querySelector('meta[property="og:description"]')
+          .setAttribute("content", item.description);
+        document
           .querySelector('meta[property="og:image"]')
-          .setAttribute("content", `${location.origin}${item.pictures[0].url.substr(1)}`);
+          .setAttribute(
+            "content",
+            `${location.origin}${item.pictures[0].url.substr(1)}`
+          );
+        document
+          .querySelector('meta[property="og:title"]')
+          .setAttribute("content", `${item.name} Details`);
+        document
+          .querySelector('meta[property="og:url"]')
+          .setAttribute("content", document.location.href);
       }
 
       loadItemDetails().catch((error) =>
