@@ -52,7 +52,7 @@
 
         document.getElementById("item-name").textContent = item.name;
         let result = item.description.replace(
-          /(\w+);(\d+)/g,
+          /([\w-]+);(\d+)/g,
           (match, word, number) => {
             // Replace the match with a new string (you can customize this)
             return `<a href="details.html?id=${number}">${word}</a>`;

@@ -18,7 +18,7 @@
             },
             {
                 "name": "Total number of missles per TEL",
-                "value": "4"
+                "value": "2"
             },
             {
                 "name": "Fire Control Radar",
@@ -88,9 +88,9 @@
         "yearAnnounced": 2021,
         "yearAbandoned": null,
         "inService": 2021,
-        "totalMade": "5000+",
+        "totalMade": "10000+",
         "type": "Drone",
-        "madeBy": "Shahed Aviation Industries",
+        "madeBy": "Shahed Aviation Industries, Iran Aircraft Manufacturing Industries Corporation",
         "countryOfOrigin": "Iran",
         "usedBy": "IRI Air Force,IRGC Aerospace Forces",
         "properties": [
@@ -113,6 +113,11 @@
             {
                 "name": "Operational Range",
                 "value": "2,500 km"
+            }
+            ,
+            {
+                "name": "Variants",
+                "value": "Shahed-136B;28"
             }
         ],
         "pictures": [
@@ -920,6 +925,36 @@
             {
                 "url": "./pictures/meraj4_3.jpg",
                 "title": "3D Model"
+            }
+        ]
+    },
+    
+    {
+        "id": 28,
+        "name": "Shahed 136B",
+        "description": "Shahed-136B is an upgrade to the older popular drone, Shahed-136;3 .",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Drone",
+        "madeBy": "Shahed Aviation Industries, Iran Aircraft Manufacturing Industries Corporation",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "4000 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/shahed136b_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/shahed136b_1.webp",
+                "title": null
             }
         ]
     }
