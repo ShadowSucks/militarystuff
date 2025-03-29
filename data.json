@@ -18,7 +18,7 @@
             },
             {
                 "name": "Fire Control Radar",
-                "value": "Najm-802;13"
+                "value": "Najm-804;30"
             },
             {
                 "name": "Target Acquisition Radar",
@@ -191,7 +191,7 @@
         "properties": [
             {
                 "name": "Range",
-                "value": "160 km"
+                "value": "200 km"
             },
             {
                 "name": "Maximum Speed",
@@ -200,6 +200,10 @@
             {
                 "name": "Mass",
                 "value": "1000 kg"
+            },
+            {
+                "name": "Radar",
+                "value": "Najm-804;30"
             }
         ],
         "pictures": [
@@ -209,6 +213,10 @@
             },
             {
                 "url": "./pictures/arman_2.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/arman_3.jpg",
                 "title": null
             }
         ]
@@ -443,28 +451,24 @@
     {
         "id": 13,
         "name": "Najm-802",
-        "description": "The Najm-802 advanced long-range radar was developed by the Islamic Republic of Iran to detect a wide range of airborne targets as well as to serve as fire control radar in long-range engagements. The Najm-802 radar includes 5,120 receiving and transmitting modules operating in the S-band (decimeter range). The radar system seems to be well suited to spot ballistic missiles as well as high-precision weapons built around stealth technology. The Najm-802 radar entered service in the 2010s and maybe related to the Bavar 373 air defense system also developed by the Islamic Republic of Iran.",
-        "yearAnnounced": 2015,
+        "description": "The Najm-802 advanced radar was developed by the Islamic Republic of Iran to detect a wide range of airborne targets as well as to serve as fire control radar in long-range engagements. The Najm-802 radar includes 5,120 receiving and transmitting modules operating in the S-band (decimeter range). The radar system seems to be well suited to spot ballistic missiles as well as high-precision weapons built around stealth technology. The Najm-802 radar entered service in the 2010s and maybe related to the Bavar 373 air defense system also developed by the Islamic Republic of Iran.",
+        "yearAnnounced": 2011,
         "yearAbandoned": null,
-        "inService": 2016,
+        "inService": 2012,
         "totalMade": "Unknown",
-        "type": "Radar",
-        "madeBy": "Aerospace Industries Organization",
+        "type": "Radar, AESA Radar, S Band Radar",
+        "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
                 "name": "Max Detection Range",
-                "value": "600 km"
+                "value": "200 km"
             }
         ],
         "pictures": [
             {
                 "url": "./pictures/najm802_1.jpg",
-                "title": null
-            },
-            {
-                "url": "./pictures/najm802_2.jpg",
                 "title": null
             }
         ]
@@ -989,6 +993,51 @@
             },
             {
                 "url": "./pictures/9dey_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Najm-804",
+        "description": "​The Najm-804 is an Iranian X-band 3D phased-array radar system developed for target acquisition and engagement. It features track-while-scan capabilities with a detection range of 150 km and a tracking range of 100 km. Integrated into air defense systems like the Khordad 15, it enhances Iran's ability to detect and engage multiple aerial threats, including stealth aircraft and drones. Its mobility allows for rapid deployment, becoming operational in under five minutes.",
+        "yearAnnounced": 2019,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "Unknown",
+        "type": "Radar, AESA Radar, X Band Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "200 km"
+            },
+            {
+                "name": "Max Interception Range",
+                "value": "160 km"
+            },
+            {
+                "name": "Max Engagement Range",
+                "value": "120 km"
+            },
+            {
+                "name": "Max Engagement Altitude",
+                "value": "27 km"
+            },
+            {
+                "name": "Max Detection Targets",
+                "value": "24 Targets"
+            },
+            {
+                "name": "Max Engagement Targets",
+                "value": "6 Targets"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/najm804_1.jpg",
                 "title": null
             }
         ]

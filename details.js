@@ -60,7 +60,7 @@ async function loadItemDetails() {
     if (detailsTable) {
       detailsTable.innerHTML = `
         <tr><th>Year Announced</th><td>${item.yearAnnounced ?? "N/A"}</td></tr>
-        <tr><th>Year Abandoned</th><td>${item.yearAbandoned ?? "N/A"}</td></tr>
+        <tr><th>Year Retired</th><td>${item.yearAbandoned ?? "N/A"}</td></tr>
         <tr><th>In Service</th><td>${item.inService ?? "N/A"}</td></tr>
         <tr><th>Total Made</th><td>${item.totalMade ?? "N/A"}</td></tr>
     `;
