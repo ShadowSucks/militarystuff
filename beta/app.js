@@ -1,7 +1,34 @@
 let allData = [];
 let filteredData = [];
 let currentSearchQuery = '';
+let currentPage = 1;
+const itemsPerPage = 10;
 
+function displayPaginatedItems() {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const paginatedItems = filteredData.slice(startIndex, startIndex + itemsPerPage);
+    safeDisplayItems(paginatedItems);
+    renderPaginationControls();
+}
+
+function renderPaginationControls() {
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    
+    document.getElementById("pagination").innerHTML = `
+        <button ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">
+            Previous
+        </button>
+        <span>Page ${currentPage} of ${totalPages}</span>
+        <button ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">
+            Next
+        </button>
+    `;
+}
+
+function goToPage(page) {
+    currentPage = page;
+    displayPaginatedItems();
+}
 document.addEventListener('DOMContentLoaded', () => {
     console.log("DOM fully loaded");
     if (document.getElementById('data-grid') && document.getElementById('current-category')) {
@@ -15,6 +42,7 @@ async function initializePage() {
     try {
         await loadData();
         setupEventListeners();
+        renderPaginationControls();
     } catch (error) {
         console.error("Initialization error:", error);
         showError("Failed to initialize. Please refresh the page.");
