@@ -132,23 +132,35 @@ async function loadItemDetails() {
         .join("");
     }
 
-    document
-      .querySelector('meta[property="og:title"]')
-      .setAttribute("content", `${item.name} - MilitaryWiki`);
-    document
-      .querySelector('meta[property="og:description"]')
-      .setAttribute("content", `${item.description.substring(0, 150)}...`);
-    document
-      .querySelector('meta[property="og:url"]')
-      .setAttribute("content", window.location.href);
+    // Update meta tags
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", item.description);
+    }
 
-    // Use first image if available
-    if (item.pictures && item.pictures[0]) {
-      const fullImageUrl = new URL(item.pictures[0].url, window.location.origin)
-        .href;
-      document
-        .querySelector('meta[property="og:image"]')
-        .setAttribute("content", fullImageUrl);
+    const ogDescription = document.querySelector(
+      'meta[property="og:description"]'
+    );
+    if (ogDescription) {
+      ogDescription.setAttribute("content", item.description);
+    }
+
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage && item.pictures[0]?.url) {
+      ogImage.setAttribute(
+        "content",
+        `${location.origin}${item.pictures[0].url.substr(1)}`
+      );
+    }
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute("content", `${item.name} Details`);
+    }
+
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) {
+      ogUrl.setAttribute("content", document.location.href);
     }
   } catch (error) {
     console.error("Error loading item details:", error);
