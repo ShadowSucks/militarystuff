@@ -291,7 +291,7 @@
         "yearAbandoned": null,
         "inService": 2018,
         "totalMade": "Unknown",
-        "type": "Radar",
+        "type": "Radar, 3D Radar, PESA Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces",
@@ -365,6 +365,10 @@
             {
                 "name": "Secondary Armament",
                 "value": "Sayyad-2"
+            },
+            {
+                "name": "Radar",
+                "value": "Bashir;8"
             }
         ],
         "pictures": [
@@ -461,10 +465,6 @@
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
-            {
-                "name": "Max Detection Range",
-                "value": "200 km"
-            }
         ],
         "pictures": [
             {
@@ -962,8 +962,6 @@
             }
         ]
     },
-    
-    
     {
         "id": 29,
         "name": "9 Dey",
@@ -979,7 +977,7 @@
         "properties": [
             {
                 "name": "Maximum Range",
-                "value": "Unknown"
+                "value": "5-30km"
             },
             {
                 "name": "Developed from",
@@ -1000,12 +998,12 @@
     {
         "id": 30,
         "name": "Najm-804",
-        "description": "​The Najm-804 is an Iranian X-band 3D phased-array radar system developed for target acquisition and engagement. It features track-while-scan capabilities with a detection range of 150 km and a tracking range of 100 km. Integrated into air defense systems like the Khordad 15, it enhances Iran's ability to detect and engage multiple aerial threats, including stealth aircraft and drones. Its mobility allows for rapid deployment, becoming operational in under five minutes.",
+        "description": "​The Najm-804 is an Iranian X-band 3D phased-array radar system developed for target acquisition and engagement. It features track-while-scan capabilities with a detection range of 200 km and a tracking range of 160 km. Integrated into air defense systems like the Khordad 15, it enhances Iran's ability to detect and engage multiple aerial threats, including stealth aircraft and drones. Its mobility allows for rapid deployment, becoming operational in under five minutes.",
         "yearAnnounced": 2019,
         "yearAbandoned": null,
         "inService": 2019,
         "totalMade": "Unknown",
-        "type": "Radar, AESA Radar, X Band Radar",
+        "type": "Radar, AESA Radar, X Band Radar, 3D Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -1015,7 +1013,7 @@
                 "value": "200 km"
             },
             {
-                "name": "Max Interception Range",
+                "name": "Max Tracking Range",
                 "value": "160 km"
             },
             {
@@ -1033,11 +1031,40 @@
             {
                 "name": "Max Engagement Targets",
                 "value": "6 Targets"
+            },
+            {
+                "name": "Developed from",
+                "value": "Najm-802;13"
             }
         ],
         "pictures": [
             {
                 "url": "./pictures/najm804_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Tabas",
+        "description": "The Tabas (Persian: طبس) missile system is an Iranian medium range road-mobile aerial defense system that was first revealed on 11 May 2014. It is believed to be another version of the Ra'ad air defense system along with Sevom Khordad. The name of the air defense system refers to Operation Eagle Claw which took place at Tabas and hence the name of the missile system..",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2014,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Developed from",
+                "value": "3rd Khordad;10"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/tabbas_1.jpg",
                 "title": null
             }
         ]
