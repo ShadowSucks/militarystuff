@@ -17,11 +17,7 @@
                 "value": "300 km"
             },
             {
-                "name": "Fire Control Radar",
-                "value": "Najm-804;30"
-            },
-            {
-                "name": "Target Acquisition Radar",
+                "name": "Battle Management Radar",
                 "value": "Meraj-4;27"
             },
             {
@@ -903,7 +899,7 @@
         "yearAbandoned": null,
         "inService": 2019,
         "totalMade": "Unknown",
-        "type": "Radar,S Band Radar, 3D Radar, AESA Radar",
+        "type": "Radar,X Band Radar, 3D Radar, AESA Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
