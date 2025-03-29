@@ -1,0 +1,996 @@
+[
+    {
+        "id": 1,
+        "name": "Bavar-373",
+        "description": "Bavar-373 is an Iranian long-range road-mobile surface-to-air missile system unveiled in August 2016.  Iran describes it as a competitor of the S-300 missile system.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": null,
+        "type": "SAM System",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "300 km"
+            },
+            {
+                "name": "Fire Control Radar",
+                "value": "Najm-802;13"
+            },
+            {
+                "name": "Target Acquisition Radar",
+                "value": "Meraj-4;27"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Sayyad-4B;25"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/bavar373_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/bavar373_2.jpg",
+                "title": "Upgraded version of Bavar-373"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Karrar MBT",
+        "description": "The Karrar is an Iranian main battle tank. The tank was announced in 2016. At the announcement, it was stated that it possessed an electro-optical fire control system, a laser rangefinder, ballistic computer and could fire at both stationary and mobile targets in day or night.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": 2020,
+        "totalMade": 800,
+        "type": "MBT",
+        "madeBy": "Bani Hashim Defense Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Ground Forces",
+        "properties": [
+            {
+                "name": "Mass",
+                "value": "50 Tons"
+            },
+            {
+                "name": "Crew",
+                "value": "3"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "70 km/h"
+            },
+            {
+                "name": "Main Armament",
+                "value": "125 mm 2A46M"
+            },
+            {
+                "name": "Operational Range",
+                "value": "~550 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/karrarmbt_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Shahed 136",
+        "description": "The Shahed 136, is an Iranian-designed loitering munition, also referred to as a kamikaze drone or suicide drone, in the form of an autonomous pusher-propelled drone. It is designed and manufactured by the Iranian state-owned corporation HESA in association with Shahed Aviation Industries.",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": 2021,
+        "totalMade": "10000+",
+        "type": "Drone",
+        "madeBy": "Shahed Aviation Industries, Iran Aircraft Manufacturing Industries Corporation",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Air Force,IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Mass",
+                "value": "200 kg"
+            },
+            {
+                "name": "Warhead Weight",
+                "value": "50 kg"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "185 km/h"
+            },
+            {
+                "name": "Unit cost",
+                "value": "Export: $100,000, Domestic: ~ $10,000"
+            },
+            {
+                "name": "Operational Range",
+                "value": "2,500 km"
+            }
+            ,
+            {
+                "name": "Variants",
+                "value": "Shahed-136B;28"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/shahed136_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/shahed136_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Suleiman-402",
+        "description": "Heavily upgraded version of American M60. Details are not accurate.",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": 2024,
+        "totalMade": "50+",
+        "type": "MBT",
+        "madeBy": "Unknown // (Could be Iranian Defence Ministry)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Ground Forces",
+        "properties": [
+            {
+                "name": "Mass",
+                "value": "46 Tons"
+            },
+            {
+                "name": "Crew",
+                "value": "4"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "60 km/h"
+            },
+            {
+                "name": "Main Armament",
+                "value": "130 mm"
+            },
+            {
+                "name": "Operational Range",
+                "value": "~ 550 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/suleiman402_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/suleiman402_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Arman",
+        "description": "The Arman missile system (full name: Arman long-range anti-ballistic missile system) is an anti-ballistic defense system built by the Iranian Ministry of Defense and the support of the armed forces of the Islamic Republic of Iran.",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": 2024,
+        "totalMade": null,
+        "type": "SAM System",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "160 km"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "Mach 5"
+            },
+            {
+                "name": "Mass",
+                "value": "1000 kg"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/arman_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/arman_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Ghadir",
+        "description": "Phased Array Radar Qadir (or Ghadir) is an Iranian radar with a range of 1100 km and capable of tracking targets to a height of 300 km. The radar was unveiled by the Islamic Revolutionary Guard Corp. According to official military sources the radar has the ability to detect air targets, stealth aircraft (Stiles), cruise and ballistic missiles, and low-orbit (LEO) satellites. The radar was tested for the first time during The Great Messenger 6 exercise.",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2014,
+        "totalMade": "At least 7",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "1100 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "300 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/ghadir_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/ghadir_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Fath 14",
+        "description": "Long Range 3D Phased Array Radar, capable of locking onto stealth fighters.",
+        "yearAnnounced": 2015,
+        "yearAbandoned": null,
+        "inService": 2016,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "600 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/fath14_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/fath14_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Bashir",
+        "description": "3D Phased Array Radar, capable of locking onto stealth aircraft up to 30km above the ground.",
+        "yearAnnounced": 2018,
+        "yearAbandoned": null,
+        "inService": 2018,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "300 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "30 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/bashir_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/bashir_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Mersad",
+        "description": "Mersad is an Iranian low- to mid-range air defense system developed in 2010. It fires Shahin (Falcon) missiles which are reverse-engineered, domestically upgraded versions of the American MIM-23 Hawk surface-to-air missiles. It uses a series of domestically produced radars and electronic devices.",
+        "yearAnnounced": 2010,
+        "yearAbandoned": null,
+        "inService": 2010,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Syrian Air Defense Forces // (alleged)",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "50 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mersad_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "3rd Khordad",
+        "description": "The Sevom Khordad or 3rd Khordad is an Iranian road-mobile medium range air defense missile system that was first unveiled on 11 May 2014.[2] It is believed to be an upgraded version of the Ra'ad air defense system[2] and somewhat superior to the other version of Ra'ad, Tabas (air defense system), although it is more similar to the Ra'ad than the Tabas is.",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2016,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Syrian Air Defense Forces // (alleged)",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "200 km"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Taer-2B"
+            },
+            {
+                "name": "Secondary Armament",
+                "value": "Sayyad-2"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/3rdkhordad_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/3rdkhordad_2.jpg",
+                "title": "The unit that shot down the american RQ-4"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "15th Khordad",
+        "description": "The Khordad 15 is an Iranian designed and built surface-to-air missile (SAM) system. The system was unveiled to the public on 9 June 2019 in an address made by Iranian Defence Minister Amir Hatami in Tehran, Iran",
+        "yearAnnounced": 2019,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "At least 9",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "200 km"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Sayyad-3;12"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/15khordad_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/15khordad_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Sayyad-3",
+        "description": "Sayyad-3 is a similar missile, but with a long-range capability. It has a similar diameter as Sayyad-2 but a longer body with different wings and control surfaces. Based on current estimates Sayyad-3 has a range of about 150–200 km. Iranian Defence Minister Hossein Dehghan stated the maximum range is about 120 km.",
+        "yearAnnounced": 2018,
+        "yearAbandoned": null,
+        "inService": 2018,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Range",
+                "value": "120 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "27 km"
+            },
+            {
+                "name": "Mass",
+                "value": "900 kg"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/sayyad3_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/sayyad3_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Najm-802",
+        "description": "The Najm-802 advanced long-range radar was developed by the Islamic Republic of Iran to detect a wide range of airborne targets as well as to serve as fire control radar in long-range engagements. The Najm-802 radar includes 5,120 receiving and transmitting modules operating in the S-band (decimeter range). The radar system seems to be well suited to spot ballistic missiles as well as high-precision weapons built around stealth technology. The Najm-802 radar entered service in the 2010s and maybe related to the Bavar 373 air defense system also developed by the Islamic Republic of Iran.",
+        "yearAnnounced": 2015,
+        "yearAbandoned": null,
+        "inService": 2016,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "600 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/najm802_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/najm802_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Zulfiqar 1",
+        "description": "The Zulfiqar-1 is based on the M48 Patton model acquired under the pre-revolution era. The Zulfiqar-1 was first revealed in public in 1994. A total of six prototypes were completed and field tested in 1997. The Zulfiqar-1 is protected by a welded steel hull and the turret is reinforced by a composite armour. The Zulfiqar-1 is armed with a 125mm Smoothbore gun taken from a T-72. At least 150 were produced.",
+        "yearAnnounced": 1994,
+        "yearAbandoned": null,
+        "inService": 1997,
+        "totalMade": "400+",
+        "type": "MBT",
+        "madeBy": "Shahid Kolah Dooz Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Ground Forces",
+        "properties": [
+            {
+                "name": "Main Armament",
+                "value": "125mm Smoothbore gun"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/zulfiqar1_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Zulfiqar 3",
+        "description": "The Zulfiqar-3, the most advanced variant of the Zulfiqar family, bears a close resemblance to the American M1 Abrams. It features considerable upgrades to the fire-control system, chassis, engine and main gun. The new variant is equipped with the 2A46 125 mm smoothbore cannon with an autoloader, a laser rangefinder and a new fire-control system. It is also fitted with a reinforced turret and the wheels are covered by an armoured skirt.",
+        "yearAnnounced": 2011,
+        "yearAbandoned": null,
+        "inService": 2012,
+        "totalMade": "750+",
+        "type": "MBT",
+        "madeBy": "Shahid Kolah Dooz Industrial Complex",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Ground Forces",
+        "properties": [
+            {
+                "name": "Main Armament",
+                "value": "125mm 2A46 Smoothbore gun"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/zulfiqar3_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Asr",
+        "description": "Asr radar is an Iranian passive electronically scanned array long-range radar unveiled in 2013. The Air Surveillance Radar or ASR is a 3D solid state phased array radar, capable of detecting boats, low flying aircraft with a radar cross section (RCS) of 4 m2 (43 sq ft) at a range of 5–110 nmi (6–127 mi; 9–204 km)",
+        "yearAnnounced": 2013,
+        "yearAbandoned": null,
+        "inService": 2013,
+        "totalMade": "Unknown",
+        "type": "Radar, 3D Radar, AESA Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Navy, IRGC Navy",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            },
+            {
+                "name": "RCS Detection",
+                "value": "4m²"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/asr_1.jpg",
+                "title": "Asr radar mounted on a ship"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Matla-ul-Fajr 1",
+        "description": "Matla-ul-fajr is an Iranian VHF 3D radar. It was first seen in military parades. It was stated that Matla-ul-fajr covered the whole Persian Gulf. The range of Matla-ul-Fajr-1 is 300 km and the max altitude is 20,000 m. When fully set up, the height of the system reaches eight meters and it uses 12 Yagi antennas installed in two rows. The whole system, containing the antennas, setup instruments, processing, controlling and displaying units, communication devices and power generator are all installed on a trailer to achieve a very good mobility. The radar is also equipped with ECCM to survive in an e-warfare environment.",
+        "yearAnnounced": 2011,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar, VHF Radar, 3D Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "Possibly 4kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr1_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr1_2.jpg",
+                "title": "Packed on a truck"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Matla-ul-Fajr 2",
+        "description": "The Matla-ul-fajr-2 radar is a VHF 3D radar, with good mobility and long range. It is suitable for air surveillance and early warning. It can operate either independently or as part of a defensive system, or as part of an integrated air defense network. This radar can be used in all weather conditions and is a modern, coherent processing radar and has all the semiconductor components that can detect and track aerial targets up to 480 kilometers as well as low-level targets. The Matla-ul-fajr-2 radar, like all previous generations, all components of the system are portable by a trailer, and the radar feed can be carried out by two diesel generators installed on it or by city electricity. In the coherent processing method used in the Matla-ul-fajr-2 radar, all transmitted signals having same phase and their random effects are prevented, while in the non-coherent there is a phase difference between signals. From the results of such a method, the ability to detect the smallest speed difference of the targets is due to the difference of the recursive signals that had no difference (actually phase difference) when sending. There is also less interference and better signal advantages in this method than the non-coherent method.",
+        "yearAnnounced": 2012,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,VHF Radar, 3D Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "480 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "4kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr2_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr2_2.jpg",
+                "title": "3D Model"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Matla-ul-Fajr 3",
+        "description": "In 2016, a long wave radar of Matla-ul-fajr family was unveiled. The Matlaul-fajr radar has air surveillance capabilities to discover and detect targets in two dimension and a range of 500 kilometers. The Matla-ul-fajr-3 radar antenna differs from its previous generation in the number of channels and the number of 8 antennas per row. This radar has 10 antennas instead of 8 antennas, i.e. 40 antennas in overall. These antennas are arranged in 8 channels instead of 2channels. The identify Friend/Foe system is also installed between the two line of antenna, similar to the Matla-ul-fajr-3 radar. The latest generation of the Matlaul-fajr radar systems employ more than 10 different techniques in the field ofelectronic warfare. The Matla-ul-fajr-3 can track 100 targets simultaneously.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,VHF Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "500 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "20 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "100"
+            },
+            {
+                "name": "Power",
+                "value": "6kW (allegedly)"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/matlaulfajr3_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/matlaulfajr3_2.jpg",
+                "title": "3D Model"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Kavosh",
+        "description": "In fact, Kavosh radar is similar to the Russian radar Kasta-2E2, which has been observed over the past few years in the country's air defense equipment which is one of the most important components capable of detecting stealth targets in today's advanced Russian air defense systems, including the S-300.",
+        "yearAnnounced": null,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar,UHF Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "150 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "6 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/kavosh_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Mehran",
+        "description": "Described as competitor of the Russian S-400, not much is known about the Mehran system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200-320 km"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Mehran-1;22"
+            },
+            {
+                "name": "Main Armament",
+                "value": "Mehran-2;23"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehran_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Mehran-1",
+        "description": "Mehran-1 is one of the main SAMs fired by the Mehran;21 system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "200 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehransam1_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Mehran-2",
+        "description": "Mehran-2 is one of the main SAMs fired by the Mehran;21 system.",
+        "yearAnnounced": 2023,
+        "yearAbandoned": null,
+        "inService": 2023,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Iran Aviation Industries Organization // (Possibly)",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "320 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/mehransam2_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Kasta-2E2",
+        "description": "The Kasta 2E is a modern Russian radar system. The development of the Kasta 2E surveillance radars was initiated in the former Soviet Union. Its primary objective is to overcome deficiencies or to satisfy the demand in low-level surveillance.",
+        "yearAnnounced": null,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Radar",
+        "madeBy": "Vega Radio Engineering Corporation",
+        "countryOfOrigin": "Russia",
+        "usedBy": "Russian Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "60 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "6 km"
+            }
+            ,
+            {
+                "name": "Power",
+                "value": "23 kW"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/kastae2e_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/kastae2e_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Sayyad-4/B",
+        "description": "Sayyad 4B is a 300-kilometer-range missile that is compatible with Iran's indigenous Bavar-373 air defense system. Sayyad 4B is the latest in the Sayyad series of solid-fuel missiles.",
+        "yearAnnounced": 2019,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "300 km"
+            },
+            {
+                "name": "Maximum Height",
+                "value": "32 km"
+            },
+            {
+                "name": "Mass",
+                "value": "2,000 kg"
+            },
+            {
+                "name": "Guidance System",
+                "value": "Semi-Active Radar Homing (SARH)"
+            },
+            {
+                "name": "Maximum Speed",
+                "value": "Mach 8"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/sayyad4_1.jpg",
+                "title": "Sayyad-4B"
+            },
+            {
+                "url": "./pictures/sayyad4_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Sayyad-2",
+        "description": "",
+        "yearAnnounced": 2013,
+        "yearAbandoned": null,
+        "inService": 2015,
+        "totalMade": "Unknown",
+        "type": "SAM",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces,Hezbollah",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "60 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/sayyad2_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Meraj-4",
+        "description": "Meraj-4 Radar is a three-dimensional phased array radar whose performance would be compatible with detecting stealth aircraft, drones, cruise missiles, and ballistic missiles.",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": 2019,
+        "totalMade": "Unknown",
+        "type": "Radar,S Band Radar, 3D Radar, AESA Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "450 km"
+            },
+            {
+                "name": "Maximum Targets",
+                "value": "200"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/meraj4_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/meraj4_2.webp",
+                "title": "Packed on a truck"
+            },
+            {
+                "url": "./pictures/meraj4_3.jpg",
+                "title": "3D Model"
+            }
+        ]
+    },
+    
+    {
+        "id": 28,
+        "name": "Shahed 136B",
+        "description": "Shahed-136B is an upgrade to the older popular drone, Shahed-136;3 .",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "Drone",
+        "madeBy": "Shahed Aviation Industries, Iran Aircraft Manufacturing Industries Corporation",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "4000 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/shahed136b_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/shahed136b_2.webp",
+                "title": null
+            }
+        ]
+    },
+    
+    
+    {
+        "id": 29,
+        "name": "9 Dey",
+        "description": "Designed to counter low altitude flying objects, like Drones, Guided Bombs and Cruise Missiles",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "Unknown"
+            },
+            {
+                "name": "Developed from",
+                "value": "3rd Khordad;10"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/9dey_1.webp",
+                "title": null
+            },
+            {
+                "url": "./pictures/9dey_2.jpg",
+                "title": null
+            }
+        ]
+    }
+]
