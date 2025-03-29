@@ -17,12 +17,12 @@
                 "value": "300 km"
             },
             {
-                "name": "Total number of missles per TEL",
-                "value": "2"
-            },
-            {
                 "name": "Fire Control Radar",
                 "value": "Najm-802;13"
+            },
+            {
+                "name": "Target Acquisition Radar",
+                "value": "Meraj-4;27"
             },
             {
                 "name": "Main Armament",
@@ -215,7 +215,7 @@
     },
     {
         "id": 6,
-        "name": "Ghadir Phased Array Radar",
+        "name": "Ghadir",
         "description": "Phased Array Radar Qadir (or Ghadir) is an Iranian radar with a range of 1100 km and capable of tracking targets to a height of 300 km. The radar was unveiled by the Islamic Revolutionary Guard Corp. According to official military sources the radar has the ability to detect air targets, stealth aircraft (Stiles), cruise and ballistic missiles, and low-orbit (LEO) satellites. The radar was tested for the first time during The Great Messenger 6 exercise.",
         "yearAnnounced": 2014,
         "yearAbandoned": null,
@@ -366,7 +366,7 @@
             },
             {
                 "url": "./pictures/3rdkhordad_2.jpg",
-                "title": "The unit that show down the american RQ-4"
+                "title": "The unit that shot down the american RQ-4"
             }
         ]
     },
@@ -522,15 +522,15 @@
     {
         "id": 16,
         "name": "Asr",
-        "description": "Asr radar is an Iranian passive electronically scanned array long-range radar unveiled in 2013.[1][2][3] The Air Surveillance Radar or ASR is a 3-D solid state phased array radar, capable of detecting boats, low flying aircraft with a radar cross section (RCS) of 4 m2 (43 sq ft) at a range of 5–110 nmi (6–127 mi; 9–204 km)",
+        "description": "Asr radar is an Iranian passive electronically scanned array long-range radar unveiled in 2013. The Air Surveillance Radar or ASR is a 3D solid state phased array radar, capable of detecting boats, low flying aircraft with a radar cross section (RCS) of 4 m2 (43 sq ft) at a range of 5–110 nmi (6–127 mi; 9–204 km)",
         "yearAnnounced": 2013,
         "yearAbandoned": null,
         "inService": 2013,
         "totalMade": "Unknown",
-        "type": "Radar, 3D Radar",
+        "type": "Radar, 3D Radar, AESA Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
-        "usedBy": "IRI Navy, IRGC Navy // (Possibly)",
+        "usedBy": "IRI Navy, IRGC Navy",
         "properties": [
             {
                 "name": "Maximum Range",
@@ -899,7 +899,7 @@
         "yearAbandoned": null,
         "inService": 2019,
         "totalMade": "Unknown",
-        "type": "Radar,S Band Radar, 3D Radar",
+        "type": "Radar,S Band Radar, 3D Radar, AESA Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -953,7 +953,42 @@
                 "title": null
             },
             {
-                "url": "./pictures/shahed136b_1.webp",
+                "url": "./pictures/shahed136b_2.webp",
+                "title": null
+            }
+        ]
+    },
+    
+    
+    {
+        "id": 29,
+        "name": "9 Dey",
+        "description": "Designed to counter low altitude flying objects, like Drones, Guided Bombs and Cruise Missiles",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": null,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Maximum Range",
+                "value": "Unknown"
+            },
+            {
+                "name": "Developed from",
+                "value": "3rd Khordad;10"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/9dey_1.webp",
+                "title": null
+            },
+            {
+                "url": "./pictures/9dey_2.jpg",
                 "title": null
             }
         ]
