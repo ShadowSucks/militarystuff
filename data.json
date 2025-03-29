@@ -136,7 +136,7 @@
         "inService": 2024,
         "totalMade": "50+",
         "type": "MBT",
-        "madeBy": "Unknown // (Could be Iranian Defence Ministry)",
+        "madeBy": "Defense Industries Organization",
         "countryOfOrigin": "Iran",
         "usedBy": "IRI Ground Forces",
         "properties": [
@@ -674,7 +674,7 @@
     {
         "id": 20,
         "name": "Kavosh",
-        "description": "In fact, Kavosh radar is similar to the Russian radar Kasta-2E2, which has been observed over the past few years in the country's air defense equipment which is one of the most important components capable of detecting stealth targets in today's advanced Russian air defense systems, including the S-300.",
+        "description": "In fact, Kavosh radar is similar to the Russian radar Kasta-2E2.",
         "yearAnnounced": null,
         "yearAbandoned": null,
         "inService": null,
