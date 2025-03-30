@@ -398,6 +398,10 @@
             {
                 "name": "Main Armament",
                 "value": "Sayyad-3;12"
+            },
+            {
+                "name": "Radar",
+                "value": "Najm-804;30"
             }
         ],
         "pictures": [
@@ -1100,7 +1104,7 @@
     {
         "id": 33,
         "name": "Joshan",
-        "description": "The Tabas (Persian: طبس) missile system is an Iranian medium range road-mobile aerial defense system that was first revealed on 11 May 2014. It is believed to be another version of the Ra'ad air defense system along with Sevom Khordad. The name of the air defense system refers to Operation Eagle Claw which took place at Tabas and hence the name of the missile system..",
+        "description": "PESA variant of Najm-804;30",
         "yearAnnounced": 2014,
         "yearAbandoned": null,
         "inService": 2014,
@@ -1112,11 +1116,11 @@
         "properties": [
             {
                 "name": "Max Detection Range",
-                "value": "200km"
+                "value": "200 km"
             },
             {
                 "name": "Max Engagement Altitude",
-                "value": "27km"
+                "value": "27 km"
             },
             {
                 "name": "Max Detection Targets",
@@ -1130,6 +1134,71 @@
         "pictures": [
             {
                 "url": "./pictures/joshanradar_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Talash",
+        "description": "Very similiar to 15th-Khordad;11",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2014,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Main Armament",
+                "value": "Sayyad-2;26"
+            },
+            {
+                "name": "Secondary Armament",
+                "value": "Sayyad-3;12"
+            },
+            {
+                "name": "Radar",
+                "value": "Hafez;35"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/talash_1.webp",
+                "title": null
+            },
+            {
+                "url": "./pictures/talash_2.webp",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Hafez",
+        "description": "",
+        "yearAnnounced": 2014,
+        "yearAbandoned": null,
+        "inService": 2014,
+        "totalMade": "Unknown",
+        "type": "Radar, 3D Radar, AESA Radar",
+        "madeBy": "Iran Aviation Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "250 km"
+            },{
+                "name": "Max Detection Targets",
+                "value": "100 Targets"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/hafez_1.jpg",
                 "title": null
             }
         ]
