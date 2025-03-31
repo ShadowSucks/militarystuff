@@ -225,7 +225,7 @@
         "yearAbandoned": null,
         "inService": 2014,
         "totalMade": "At least 7",
-        "type": "Radar",
+        "type": "Radar, OTH Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -254,11 +254,11 @@
         "id": 7,
         "name": "Fath 14",
         "description": "Long Range 3D Phased Array Radar, capable of locking onto stealth fighters.",
-        "yearAnnounced": 2015,
+        "yearAnnounced": 2014,
         "yearAbandoned": null,
-        "inService": 2016,
+        "inService": 2015,
         "totalMade": "Unknown",
-        "type": "Radar",
+        "type": "Radar, 3D Radar, PESA Radar, VHF Radar",
         "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
@@ -266,6 +266,10 @@
             {
                 "name": "Range",
                 "value": "600 km"
+            },
+            {
+                "name": "Range",
+                "value": "24 kW"
             }
         ],
         "pictures": [
@@ -1184,7 +1188,7 @@
         "inService": 2014,
         "totalMade": "Unknown",
         "type": "Radar, 3D Radar, AESA Radar",
-        "madeBy": "Iran Aviation Industries Organization",
+        "madeBy": "Iran Electronics Industries",
         "countryOfOrigin": "Iran",
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
@@ -1199,6 +1203,39 @@
         "pictures": [
             {
                 "url": "./pictures/hafez_1.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Nazir",
+        "description": "",
+        "yearAnnounced": 2016,
+        "yearAbandoned": null,
+        "inService": 2016,
+        "totalMade": "At least 3",
+        "type": "Radar, OTH Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Range",
+                "value": "800 km"
+            },
+            {
+                "name": "Max Altitude",
+                "value": "30 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/nazir_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/nazir_2.jpg",
                 "title": null
             }
         ]
