@@ -63,6 +63,9 @@ async function loadItemDetails() {
         <tr><th>Year Retired</th><td>${item.yearAbandoned ?? "N/A"}</td></tr>
         <tr><th>In Service</th><td>${item.inService ?? "N/A"}</td></tr>
         <tr><th>Total Made</th><td>${item.totalMade ?? "N/A"}</td></tr>
+        <tr><th>Country of Origin</th><td><a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${
+        item.countryOfOrigin
+      }</a></td></tr>
     `;
     }
 
@@ -85,11 +88,6 @@ async function loadItemDetails() {
                 .trim()}</a>${e.split("//")[1] || ""}`
           )
           .join(", ")}</td></tr>
-        <tr><th>Country</th><td>
-            <a href="index.html?countryOfOrigin=${item.countryOfOrigin}">${
-        item.countryOfOrigin
-      }</a>
-        </td></tr>
         <tr><th>Used By</th><td>${item.usedBy
           .split(",")
           .map(

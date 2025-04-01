@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Bavar-373",
-        "description": "Bavar-373 is an Iranian long-range road-mobile surface-to-air missile system unveiled in August 2016.  Iran describes it as a competitor of the S-300 missile system.",
+        "description": "Bavar-373 is an Iranian long-range road-mobile surface-to-air missile system unveiled in August 2016.",
         "yearAnnounced": 2016,
         "yearAbandoned": null,
         "inService": 2019,
@@ -32,7 +32,7 @@
             },
             {
                 "url": "./pictures/bavar373_2.jpg",
-                "title": "Upgraded version of Bavar-373"
+                "title": "Production version of Bavar-373"
             }
         ]
     },
@@ -913,12 +913,12 @@
         "usedBy": "IRGC Aerospace Forces,IRI Air Defense Forces",
         "properties": [
             {
-                "name": "Maximum Range",
+                "name": "Max Detection Range",
                 "value": "450 km"
             },
             {
-                "name": "Maximum Targets",
-                "value": "200"
+                "name": "Max Tracking Targets",
+                "value": "200 Targets"
             }
         ],
         "pictures": [
@@ -933,6 +933,10 @@
             {
                 "url": "./pictures/meraj4_3.jpg",
                 "title": "3D Model"
+            },
+            {
+                "url": "./pictures/meraj4_4.jpg",
+                "title": null
             }
         ]
     },
@@ -1084,9 +1088,9 @@
         "id": 32,
         "name": "Joshan (SAM)",
         "description": "",
-        "yearAnnounced": 2014,
+        "yearAnnounced": 2021,
         "yearAbandoned": null,
-        "inService": 2014,
+        "inService": 2024,
         "totalMade": "Unknown",
         "type": "SAM System",
         "madeBy": "Iran Aviation Industries Organization",
@@ -1109,9 +1113,9 @@
         "id": 33,
         "name": "Joshan",
         "description": "PESA variant of Najm-804;30",
-        "yearAnnounced": 2014,
+        "yearAnnounced": 2021,
         "yearAbandoned": null,
-        "inService": 2014,
+        "inService": 2021,
         "totalMade": "Unknown",
         "type": "Radar, PESA Radar",
         "madeBy": "Iran Aviation Industries Organization",
@@ -1148,7 +1152,7 @@
         "description": "Very similiar to 15th-Khordad;11",
         "yearAnnounced": 2014,
         "yearAbandoned": null,
-        "inService": 2014,
+        "inService": 2015,
         "totalMade": "Unknown",
         "type": "SAM System",
         "madeBy": "Iran Aviation Industries Organization",
@@ -1185,7 +1189,7 @@
         "description": "",
         "yearAnnounced": 2014,
         "yearAbandoned": null,
-        "inService": 2014,
+        "inService": 2015,
         "totalMade": "Unknown",
         "type": "Radar, 3D Radar, AESA Radar",
         "madeBy": "Iran Electronics Industries",
@@ -1236,6 +1240,80 @@
             },
             {
                 "url": "./pictures/nazir_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Zubin",
+        "description": "Zubin was unveiled in 2021 and is the ground-based version of the Navab system. This Iranian system consists of a 360-degree radar, a defense missile, and a command center. The radar has a detection range of 30 kilometers and an engagement range of 20 kilometers, and can detect 100 targets and engage 8 targets simultaneously.",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": 2021,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "30 km"
+            },
+            {
+                "name": "Max Engagement Range",
+                "value": "20 km"
+            },
+            {
+                "name": "Max Detection Targets",
+                "value": "100 Targets"
+            },
+            {
+                "name": "Max Engagement Targets",
+                "value": "8 Targets"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/zubin_1.jpg",
+                "title": null
+            },
+            {
+                "url": "./pictures/zubin_2.jpg",
+                "title": null
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Azarakhsh",
+        "description": "The Azarakhsh (post-altitude air defense system), is a short-range air defense system capable of continuously conducting operations. It is equipped with an advanced 3D radar system and advanced searchers and optical search systems. This versatile defense system can be installed on various types of vehicles and is capable of swiftly neutralizing the intended targets.",
+        "yearAnnounced": 2024,
+        "yearAbandoned": null,
+        "inService": 2024,
+        "totalMade": "Unknown",
+        "type": "SAM System",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range (Electronic)",
+                "value": "50 km"
+            },
+            {
+                "name": "Max Detection Range (Optical)",
+                "value": "25 km"
+            },
+            {
+                "name": "Main Armament",
+                "value": "AIM-9"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/azarakhsh_1.jpg",
                 "title": null
             }
         ]
