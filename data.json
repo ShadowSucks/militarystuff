@@ -1317,5 +1317,34 @@
                 "title": null
             }
         ]
+    },
+    {
+        "id": 39,
+        "name": "Alborz",
+        "description": "",
+        "yearAnnounced": 2022,
+        "yearAbandoned": null,
+        "inService": 2022,
+        "totalMade": "Unknown",
+        "type": "Radar, AESA Radar,3D Radar, X Band Radar",
+        "madeBy": "Aerospace Industries Organization",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRI Air Defense Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "450 km"
+            },
+            {
+                "name": "Max Detection Targets",
+                "value": "300 Targets"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/alborz_1.jpg",
+                "title": null
+            }
+        ]
     }
 ]
