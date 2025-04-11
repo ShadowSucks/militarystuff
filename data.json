@@ -1346,5 +1346,34 @@
                 "title": null
             }
         ]
+    },
+    {
+        "id": 40,
+        "name": "Quds",
+        "description": "",
+        "yearAnnounced": 2021,
+        "yearAbandoned": null,
+        "inService": 2021,
+        "totalMade": "Unknown",
+        "type": "Radar,3D Radar",
+        "madeBy": "Iran Electronics Industries",
+        "countryOfOrigin": "Iran",
+        "usedBy": "IRGC Aerospace Forces",
+        "properties": [
+            {
+                "name": "Max Detection Range",
+                "value": "> 500 km"
+            },
+            {
+                "name": "Max Detection Altitude",
+                "value": "> 27 km"
+            }
+        ],
+        "pictures": [
+            {
+                "url": "./pictures/quds_1.jpg",
+                "title": null
+            }
+        ]
     }
 ]
